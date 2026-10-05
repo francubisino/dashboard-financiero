@@ -1,0 +1,55 @@
+{
+    "DXY": {
+        "value": 101.93,
+        "prev": 99.56
+    },
+    "VIX": {
+        "value": 15.31,
+        "prev": 14.32
+    },
+    "COPPER": {
+        "value": 6.549,
+        "prev": 6.501
+    },
+    "GOLD": {
+        "value": 4162.2998,
+        "prev": 4414.6001
+    },
+    "COPPER_GOLD": {
+        "value": 0.001573,
+        "prev": 0.001473
+    },
+    "HY_SPREAD": {
+        "value": 3.24,
+        "prev": 3.12
+    },
+    "YIELD_CURVE": {
+        "value": 45.0,
+        "prev": 46.0
+    },
+    "GLOBAL_M2": {
+        "value": 5.66,
+        "prev": 5.41
+    },
+    "GLOBAL_INFLATION": {
+        "value": 0.247,
+        "prev": 0.126
+    },
+    "MOVE_VIX": {
+        "value": 7.008,
+        "prev": 5.566
+    },
+    "GLOBAL_PMI": {
+        "value": null,
+        "prev": null
+    },
+    "OECD_CLI": {
+        "value": null,
+        "prev": null
+    },
+    "CREDIT_IMPULSE": {
+        "value": null,
+        "prev": null
+    },
+    "last_updated": "2026-10-04 10:32:00"
+}

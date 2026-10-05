@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantMonitor Pro - Dashboard Financiero & Stock Picker</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0b0f19',
+                        panelbg: '#151c2c',
+                        accent: '#6366f1'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased pb-12">
+
+    <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="p-2 bg-indigo-600 rounded-lg shadow-lg shadow-indigo-500/30">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-white tracking-wide">QuantMonitor <span class="text-xs text-indigo-400 font-medium">GICS Pro</span></h1>
+                    <p class="text-[10px] text-slate-400">Análisis Fundamental &amp; Técnico Multi-temporal (Diario / Semanal)</p>
+                </div>
+            </div>
+            <div id="last-updated" class="text-xs font-mono text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
+                Sincronizando...
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            
+            <!-- Panel: Oportunidades Corto Plazo -->
+            <div class="md:col-span-1 bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-xl">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-800 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <h2 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Oportunidades Corto Plazo (Diario)</h2>
+                    </div>
+                    <span class="text-[10px] text-slate-500 font-mono">RSI&lt;40 | Dist EMA&lt;6%</span>
+                </div>
+                <div id="short-term-opps" class="flex flex-wrap gap-2 min-h-[40px] items-center">
+                    <span class="text-xs text-slate-500 italic">Buscando oportunidades...</span>
+                </div>
+            </div>
+
+            <!-- Panel: Oportunidades Mediano Plazo -->
+            <div class="md:col-span-1 bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-xl">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-800 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-pulse"></span>
+                        <h2 class="text-xs font-bold uppercase tracking-wider text-indigo-400">Oportunidades Mediano Plazo (Semanal)</h2>
+                    </div>
+                    <span class="text-[10px] text-slate-500 font-mono">RSI&lt;40 | Dist EMA&lt;6%</span>
+                </div>
+                <div id="med-term-opps" class="flex flex-wrap gap-2 min-h-[40px] items-center">
+                    <span class="text-xs text-slate-500 italic">Buscando oportunidades...</span>
+                </div>
+            </div>
+
+            <!-- Panel: Barómetro Macro Global -->
+            <div class="md:col-span-2 bg-slate-900 border border-slate-800 rounded-xl p-4 shadow-xl flex flex-col">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-800 pb-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                        <h2 class="text-xs font-bold uppercase tracking-wider text-amber-400">Barómetro Macro Global</h2>
+                    </div>
+                    <span id="macro-updated" class="text-[10px] text-slate-500 font-mono"></span>
+                </div>
+                <div id="macro-panel" class="flex-1">
+                    <span class="text-xs text-slate-500 italic">Cargando indicadores...</span>
+                </div>
+                <div class="mt-2 pt-2 border-t border-slate-800/60 text-center">
+                    <span class="text-[10px] text-slate-500 italic">💡 Haz clic en cualquier indicador para ver su detalle e interpretación.</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ===== PESTAÑAS ===== -->
+        <div class="mb-1 flex gap-1 border-b border-slate-800">
+            <button id="tab-btn-tecnico"
+                onclick="switchTab('tecnico')"
+                class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-indigo-500 text-indigo-300 bg-slate-900">
+                📈 Análisis Técnico
+            </button>
+            <button id="tab-btn-fundamental"
+                onclick="switchTab('fundamental')"
+                class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-transparent text-slate-500 hover:text-slate-300">
+                🔬 Análisis Fundamental
+            </button>
+        </div>
+
+        <!-- ===== PESTAÑA: ANÁLISIS TÉCNICO ===== -->
+        <div id="tab-tecnico">
+
+            <section class="bg-slate-900 border border-slate-800 rounded-xl p-5 mb-4 shadow-xl">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Buscar Empresa</label>
+                        <input type="text" id="t-search" placeholder="Ticker / Nombre..."
+                               class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Sector GICS</label>
+                        <select id="t-sector" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="ALL">Todos los Sectores</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Grupo de Industria</label>
+                        <select id="t-industry-group" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="ALL">Todos los Grupos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Nivel de Beta</label>
+                        <select id="t-beta" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="ALL">Todos los Betas</option>
+                            <option value="LOW">Defensivo (&lt; 1.0)</option>
+                            <option value="MEDIUM">Moderado (1.0 - 1.5)</option>
+                            <option value="HIGH">Alta Volatilidad (&gt; 1.5)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Señales EMAs</label>
+                        <select id="t-signal" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="ALL">Todas las Señales</option>
+                            <option value="SHORT_BUY">Corto: BUY (EMA 7/14)</option>
+                            <option value="SHORT_SELL">Corto: SELL (EMA 7/14)</option>
+                            <option value="MED_BUY">Mediano: BUY (EMA 21/42)</option>
+                            <option value="MED_SELL">Mediano: SELL (EMA 21/42)</option>
+                            <option value="DOUBLE_BUY">Doble BUY</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">EMA100 &lt; EMA200</label>
+                        <select id="t-ema-lt" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-indigo-500 transition">
+                            <option value="ALL">Todos los Estados</option>
+                            <option value="DIARIO_BELOW">Diario</option>
+                            <option value="SEMANAL_BELOW">Semanal</option>
+                            <option value="AMBOS_BELOW">Ambos</option>
+                            <option value="NULL_BOTH">Ninguno</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <div class="overflow-x-auto bg-slate-900 border border-slate-800 rounded-xl shadow-2xl">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-950 uppercase tracking-wider text-slate-400 border-b border-slate-800">
+                        <tr>
+                            <th rowspan="2" class="py-3 px-3 cursor-pointer select-none hover:text-white transition" onclick="sortTech('ticker')">
+                                Empresa <span id="ts-icon-ticker"></span>
+                            </th>
+                            <th colspan="6" class="py-2 px-3 text-center bg-indigo-950/60 text-indigo-300 font-bold border-x border-slate-800">Segmento Diario</th>
+                            <th colspan="6" class="py-2 px-3 text-center bg-slate-900 text-slate-300 font-bold border-r border-slate-800">Segmento Semanal</th>
+                        </tr>
+                        <tr class="bg-slate-950/80 text-[10px] text-slate-400 border-t border-slate-800/60">
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('d_short')">Señal Corto <span id="ts-icon-d_short"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('d_med')">Señal Med <span id="ts-icon-d_med"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('d_rsi')">RSI (14) <span id="ts-icon-d_rsi"></span></th>
+                            <th class="py-2 px-2 text-right cursor-pointer hover:text-white" onclick="sortTech('d_dist100')">Dist. EMA100 <span id="ts-icon-d_dist100"></span></th>
+                            <th class="py-2 px-2 text-right cursor-pointer hover:text-white" onclick="sortTech('d_dist200')">Dist. EMA200 <span id="ts-icon-d_dist200"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white border-r border-slate-800" onclick="sortTech('d_ema_lt')">EMA100&lt;200 <span id="ts-icon-d_ema_lt"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('w_short')">Señal Corto <span id="ts-icon-w_short"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('w_med')">Señal Med <span id="ts-icon-w_med"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white" onclick="sortTech('w_rsi')">RSI (14) <span id="ts-icon-w_rsi"></span></th>
+                            <th class="py-2 px-2 text-right cursor-pointer hover:text-white" onclick="sortTech('w_dist100')">Dist. EMA100 <span id="ts-icon-w_dist100"></span></th>
+                            <th class="py-2 px-2 text-right cursor-pointer hover:text-white" onclick="sortTech('w_dist200')">Dist. EMA200 <span id="ts-icon-w_dist200"></span></th>
+                            <th class="py-2 px-2 text-center cursor-pointer hover:text-white border-r border-slate-800" onclick="sortTech('w_ema_lt')">EMA100&lt;200 <span id="ts-icon-w_ema_lt"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tech-table-body" class="divide-y divide-slate-800/60"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===== PESTAÑA: ANÁLISIS FUNDAMENTAL ===== -->
+        <div id="tab-fundamental" class="hidden">
+
+            <section class="bg-slate-900 border border-slate-800 rounded-xl p-5 mb-4 shadow-xl">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Buscar Empresa</label>
+                        <input type="text" id="f-search" placeholder="Ticker / Nombre..."
+                               class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Sector GICS</label>
+                        <select id="f-sector" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500 transition">
+                            <option value="ALL">Todos los Sectores</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Grupo de Industria</label>
+                        <select id="f-industry-group" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500 transition">
+                            <option value="ALL">Todos los Grupos</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 mb-1">Subindustria GICS</label>
+                        <select id="f-subindustry" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-purple-500 transition">
+                            <option value="ALL">Todas las Subindustrias</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <div class="overflow-x-auto bg-slate-900 border border-slate-800 rounded-xl shadow-2xl">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-slate-950 uppercase tracking-wider text-slate-400 border-b border-slate-800">
+                        <tr>
+                            <th class="py-3 px-3 cursor-pointer hover:text-white" onclick="sortFund('ticker')">Empresa <span id="fs-icon-ticker"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white bg-purple-950/40" onclick="sortFund('beta')">Beta <span id="fs-icon-beta"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white bg-purple-950/40" onclick="sortFund('f_pe_hist')" title="Desvío P/E actual vs. P/E histórico promedio (3 años)">Desv. P/E vs Hist (3A) <span id="fs-icon-f_pe_hist"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white bg-purple-950/40" onclick="sortFund('f_pe_sector')" title="Desvío P/E actual vs. mediana P/E de la subindustria GICS">Desv. P/E vs Subind. <span id="fs-icon-f_pe_sector"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white bg-purple-950/40" onclick="sortFund('f_fwd_pe_hist')" title="Desvío Forward P/E vs. histórico (3 años). Solo sectores tangibles.">Desv. Fwd P/E vs Hist <span id="fs-icon-f_fwd_pe_hist"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white bg-purple-950/40" onclick="sortFund('f_book_price')" title="Price / Book Price. Solo sectores tangibles.">P/BP <span id="fs-icon-f_book_price"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white" onclick="sortFund('pe_ratio')">P/E Trailing <span id="fs-icon-pe_ratio"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white" onclick="sortFund('forward_pe')">Fwd P/E <span id="fs-icon-forward_pe"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white" onclick="sortFund('eps')">EPS <span id="fs-icon-eps"></span></th>
+                            <th class="py-3 px-2 text-right cursor-pointer hover:text-white" onclick="sortFund('forward_eps')">EPS Forward <span id="fs-icon-forward_eps"></span></th>
+                        </tr>
+                    </thead>
+                    <tbody id="fund-table-body" class="divide-y divide-slate-800/60"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Detalle de Acción -->
+    <div id="detail-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-4xl rounded-xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
+            
+            <div class="px-6 py-4 border-b border-slate-800 flex justify-between items-center bg-slate-950">
+                <div>
+                    <h2 id="modal-title" class="text-lg font-bold text-white"></h2>
+                    <p id="modal-subtitle" class="text-xs text-indigo-400 font-medium"></p>
+                </div>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+            </div>
+
+            <div id="modal-content" class="p-6 overflow-y-auto space-y-6">
+            </div>
+
+            <div class="px-6 py-3 border-t border-slate-800 bg-slate-950 flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold transition">
+                    Cerrar Análisis
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalle de Indicador Macro -->
+    <div id="macro-detail-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center hidden p-4">
+        <div class="bg-slate-900 border border-slate-800 w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden flex flex-col">
+            <div class="px-6 py-4 border-b border-slate-800 flex justify-between items-center bg-slate-950">
+                <div class="flex items-center space-x-3">
+                    <span id="macro-modal-dot" class="w-3 h-3 rounded-full flex-shrink-0"></span>
+                    <div>
+                        <h2 id="macro-modal-title" class="text-base font-bold text-white tracking-wide"></h2>
+                        <p id="macro-modal-subtitle" class="text-xs text-slate-400 font-mono"></p>
+                    </div>
+                </div>
+                <button onclick="closeMacroModal()" class="text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+            </div>
+
+            <div id="macro-modal-content" class="p-6 space-y-4 overflow-y-auto max-h-[80vh]">
+            </div>
+
+            <div class="px-6 py-3 border-t border-slate-800 bg-slate-950 flex justify-end">
+                <button onclick="closeMacroModal()" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg text-xs font-semibold transition">
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let rawData = [];
+        let macroDataCache = {};
+
+        // ── Estado de ordenamiento por pestaña ──────────────────────────────────
+        const techSort  = { col: 'ticker', asc: true };
+        const fundSort  = { col: 'ticker', asc: true };
+
+        // ── Pestaña activa ──────────────────────────────────────────────────────
+        let activeTab = 'tecnico';
+
+        function switchTab(tab) {
+            activeTab = tab;
+            document.getElementById('tab-tecnico').classList.toggle('hidden', tab !== 'tecnico');
+            document.getElementById('tab-fundamental').classList.toggle('hidden', tab !== 'fundamental');
+
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('border-indigo-500','text-indigo-300','bg-slate-900','border-purple-500','text-purple-300');
+                b.classList.add('border-transparent','text-slate-500');
+            });
+            const active = document.getElementById(`tab-btn-${tab}`);
+            if (tab === 'tecnico') {
+                active.classList.add('border-indigo-500','text-indigo-300','bg-slate-900');
+            } else {
+                active.classList.add('border-purple-500','text-purple-300','bg-slate-900');
+            }
+            active.classList.remove('border-transparent','text-slate-500');
+        }
+
+        // ── Carga de datos ──────────────────────────────────────────────────────
+        document.addEventListener('DOMContentLoaded', () => {
+            loadDatabase();
+        });
+
+        async function loadDatabase() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error("Error al acceder a data.json");
+                const jsonContent = await response.json();
+                rawData = Array.isArray(jsonContent) ? jsonContent : (jsonContent.stocks || []);
+
+                if (rawData.length > 0 && rawData[0].last_updated) {
+                    document.getElementById('last-updated').innerText = `Actualizado: ${rawData[0].last_updated}`;
+                }
+
+                populateAllFilters();
+                bindAllEvents();
+                renderOpportunities();
+                renderTech();
+                renderFund();
+                loadMacro();
+            } catch (err) {
+                console.error(err);
+                ['tech-table-body','fund-table-body'].forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.innerHTML = `<tr><td colspan="14" class="text-center py-12 text-rose-400 text-xs font-semibold">Error al cargar data.json. Ejecute el script ETL.</td></tr>`;
+                });
+            }
+        }
+
+        // ── Populate filtros ────────────────────────────────────────────────────
+        function populateAllFilters() {
+            const sectors       = [...new Set(rawData.map(i => i.sector))].sort();
+            const subindustries = [...new Set(rawData.map(i => i.sub_industry || i.industry || '—'))].sort();
+
+            ['t-sector','f-sector'].forEach(id => {
+                const sel = document.getElementById(id);
+                sel.innerHTML = '<option value="ALL">Todos los Sectores</option>';
+                sectors.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; sel.appendChild(o); });
+            });
+
+            const fSubSel = document.getElementById('f-subindustry');
+            fSubSel.innerHTML = '<option value="ALL">Todas las Subindustrias</option>';
+            subindustries.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; fSubSel.appendChild(o); });
+
+            updateTechIndustryGroup();
+            updateFundIndustryGroup();
+        }
+
+        function updateTechIndustryGroup() {
+            const sec = document.getElementById('t-sector').value;
+            const sel = document.getElementById('t-industry-group');
+            const cur = sel.value;
+            const filtered = sec === 'ALL' ? rawData : rawData.filter(i => i.sector === sec);
+            const groups = [...new Set(filtered.map(i => i.industry_group))].sort();
+            sel.innerHTML = '<option value="ALL">Todos los Grupos</option>';
+            groups.forEach(g => { const o = document.createElement('option'); o.value = g; o.textContent = g; sel.appendChild(o); });
+            sel.value = groups.includes(cur) ? cur : 'ALL';
+        }
+
+        function updateFundIndustryGroup() {
+            const sec = document.getElementById('f-sector').value;
+            const sel = document.getElementById('f-industry-group');
+            const cur = sel.value;
+            const filtered = sec === 'ALL' ? rawData : rawData.filter(i => i.sector === sec);
+            const groups = [...new Set(filtered.map(i => i.industry_group))].sort();
+            sel.innerHTML = '<option value="ALL">Todos los Grupos</option>';
+            groups.forEach(g => { const o = document.createElement('option'); o.value = g; o.textContent = g; sel.appendChild(o); });
+            sel.value = groups.includes(cur) ? cur : 'ALL';
+        }
+
+        function updateFundSubindustry() {
+            const sec   = document.getElementById('f-sector').value;
+            const grp   = document.getElementById('f-industry-group').value;
+            const sel   = document.getElementById('f-subindustry');
+            const cur   = sel.value;
+            let filtered = rawData;
+            if (sec !== 'ALL') filtered = filtered.filter(i => i.sector === sec);
+            if (grp !== 'ALL') filtered = filtered.filter(i => i.industry_group === grp);
+            const subs = [...new Set(filtered.map(i => i.sub_industry || i.industry || '—'))].sort();
+            sel.innerHTML = '<option value="ALL">Todas las Subindustrias</option>';
+            subs.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; sel.appendChild(o); });
+            sel.value = subs.includes(cur) ? cur : 'ALL';
+        }
+
+        // ── Bind de eventos ─────────────────────────────────────────────────────
+        function bindAllEvents() {
+            // Técnico
+            document.getElementById('t-sector').addEventListener('change', () => { updateTechIndustryGroup(); renderTech(); });
+            ['t-search','t-industry-group','t-beta','t-signal','t-ema-lt'].forEach(id => {
+                const el = document.getElementById(id);
+                el.addEventListener('input', renderTech);
+                el.addEventListener('change', renderTech);
+            });
+
+            // Fundamental
+            document.getElementById('f-sector').addEventListener('change', () => { updateFundIndustryGroup(); updateFundSubindustry(); renderFund(); });
+            document.getElementById('f-industry-group').addEventListener('change', () => { updateFundSubindustry(); renderFund(); });
+            ['f-search','f-subindustry'].forEach(id => {
+                const el = document.getElementById(id);
+                el.addEventListener('input', renderFund);
+                el.addEventListener('change', renderFund);
+            });
+        }
+
+        // ── Helpers de badges ───────────────────────────────────────────────────
+        const renderSignalBadge = (sig) => {
+            if (sig === 'STRONG BUY')  return '<span class="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded bg-emerald-400/30 text-emerald-300 border border-emerald-400/60">STRONG BUY</span>';
+            if (sig === 'STRONG SELL') return '<span class="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded bg-rose-400/30 text-rose-300 border border-rose-400/60">STRONG SELL</span>';
+            if (sig === 'BUY')   return '<span class="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">BUY</span>';
+            if (sig === 'SELL')  return '<span class="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded bg-rose-500/20 text-rose-400 border border-rose-500/30">SELL</span>';
+            return '<span class="text-slate-600 text-xs">-</span>';
+        };
+        const renderEmaLtBadge = (val) =>
+            val === 'Si' ? '<span class="inline-block px-1.5 py-0.5 text-[10px] font-bold rounded bg-rose-500/20 text-rose-400 border border-rose-500/30">Si</span>'
+                         : '<span class="text-slate-600 text-xs">-</span>';
+
+        const formatDev = (val) => {
+            if (typeof val !== 'number') return '<span class="text-slate-600 text-xs">N/A</span>';
+            const cls = val >= 0 ? 'text-emerald-400' : 'text-rose-400';
+            return `<span class="font-mono ${cls}">${val > 0 ? '+' : ''}${val}%</span>`;
+        };
+
+        const rsiBadge = (rsi) => {
+            if (rsi <= 40) return 'bg-emerald-500/20 text-emerald-400 font-bold border border-emerald-500/30';
+            if (rsi >= 60) return 'bg-rose-500/20 text-rose-400 font-bold border border-rose-500/30';
+            return 'bg-slate-800 text-slate-300';
+        };
+
+        const isBuy  = s => s === 'BUY' || s === 'STRONG BUY';
+        const isSell = s => s === 'SELL' || s === 'STRONG SELL';
+
+        // ── Render Empresa cell (shared) ────────────────────────────────────────
+        const empresaCell = (item) =>
+            `<td class="py-3 px-3 cursor-pointer" onclick="openModal('${item.ticker}')">
+                <div class="font-bold text-white text-xs hover:text-indigo-300 transition">${item.ticker}</div>
+                <div class="text-[9px] text-slate-500 truncate max-w-[120px]">${item.name || ''}</div>
+                <div class="text-[9px] text-indigo-400 font-medium">${item.sector}</div>
+            </td>`;
+
+        // ════════════════════════════════════════════════════════════════════════
+        // PESTAÑA TÉCNICA
+        // ════════════════════════════════════════════════════════════════════════
+        function sortTech(col) {
+            techSort.asc = techSort.col === col ? !techSort.asc : true;
+            techSort.col = col;
+            renderTech();
+        }
+
+        function updateTechSortIcons() {
+            const keys = ['ticker','beta','d_short','d_med','d_rsi','d_dist100','d_dist200','d_ema_lt',
+                          'w_short','w_med','w_rsi','w_dist100','w_dist200','w_ema_lt'];
+            keys.forEach(k => { const el = document.getElementById(`ts-icon-${k}`); if (el) el.textContent = ''; });
+            const el = document.getElementById(`ts-icon-${techSort.col}`);
+            if (el) el.textContent = techSort.asc ? '▲' : '▼';
+        }
+
+        function renderTech() {
+            const search    = document.getElementById('t-search').value.toLowerCase();
+            const sector    = document.getElementById('t-sector').value;
+            const group     = document.getElementById('t-industry-group').value;
+            const betaRange = document.getElementById('t-beta').value;
+            const sigFilter = document.getElementById('t-signal').value;
+            const emaFilter = document.getElementById('t-ema-lt').value;
+
+            let filtered = rawData.filter(item => {
+                const matchSearch = item.ticker.toLowerCase().includes(search) || (item.name || '').toLowerCase().includes(search);
+                const matchSector = sector === 'ALL' || item.sector === sector;
+                const matchGroup  = group  === 'ALL' || item.industry_group === group;
+
+                const bVal = parseFloat(item.technical?.beta);
+                let matchBeta = true;
+                if (betaRange === 'LOW')    matchBeta = !isNaN(bVal) && bVal < 1.0;
+                if (betaRange === 'MEDIUM') matchBeta = !isNaN(bVal) && bVal >= 1.0 && bVal <= 1.5;
+                if (betaRange === 'HIGH')   matchBeta = !isNaN(bVal) && bVal > 1.5;
+
+                let matchSig = true;
+                if (sigFilter !== 'ALL') {
+                    const dSig = item.technical_daily?.signals || {};
+                    const wSig = item.technical_weekly?.signals || {};
+                    if (sigFilter === 'SHORT_BUY')  matchSig = isBuy(dSig.short_term)  || isBuy(wSig.short_term);
+                    if (sigFilter === 'SHORT_SELL') matchSig = isSell(dSig.short_term) || isSell(wSig.short_term);
+                    if (sigFilter === 'MED_BUY')    matchSig = isBuy(dSig.medium_term)  || isBuy(wSig.medium_term);
+                    if (sigFilter === 'MED_SELL')   matchSig = isSell(dSig.medium_term) || isSell(wSig.medium_term);
+                    if (sigFilter === 'DOUBLE_BUY') matchSig = (isBuy(dSig.short_term) && isBuy(dSig.medium_term)) ||
+                                                               (isBuy(wSig.short_term) && isBuy(wSig.medium_term));
+                }
+
+                let matchEma = true;
+                if (emaFilter !== 'ALL') {
+                    const dLt = item.technical_daily?.ema100_lt_ema200;
+                    const wLt = item.technical_weekly?.ema100_lt_ema200;
+                    if (emaFilter === 'DIARIO_BELOW')  matchEma = dLt === 'Si';
+                    if (emaFilter === 'SEMANAL_BELOW') matchEma = wLt === 'Si';
+                    if (emaFilter === 'AMBOS_BELOW')   matchEma = dLt === 'Si' && wLt === 'Si';
+                    if (emaFilter === 'NULL_BOTH')     matchEma = dLt !== 'Si' && wLt !== 'Si';
+                }
+
+                return matchSearch && matchSector && matchGroup && matchBeta && matchSig && matchEma;
+            });
+
+            filtered.sort((a, b) => {
+                let vA, vB;
+                const td = (x) => x.technical_daily || {};
+                const tw = (x) => x.technical_weekly || {};
+                switch (techSort.col) {
+                    case 'ticker':   vA = a.ticker; vB = b.ticker; break;
+                    case 'beta':     vA = parseFloat(a.technical?.beta) || -99; vB = parseFloat(b.technical?.beta) || -99; break;
+                    case 'd_short':  vA = td(a).signals?.short_term  || ''; vB = td(b).signals?.short_term  || ''; break;
+                    case 'd_med':    vA = td(a).signals?.medium_term || ''; vB = td(b).signals?.medium_term || ''; break;
+                    case 'd_rsi':    vA = td(a).rsi; vB = td(b).rsi; break;
+                    case 'd_dist100':vA = td(a).dist_ema100; vB = td(b).dist_ema100; break;
+                    case 'd_dist200':vA = td(a).dist_ema200; vB = td(b).dist_ema200; break;
+                    case 'd_ema_lt': vA = td(a).ema100_lt_ema200 || 'zzz'; vB = td(b).ema100_lt_ema200 || 'zzz'; break;
+                    case 'w_short':  vA = tw(a).signals?.short_term  || ''; vB = tw(b).signals?.short_term  || ''; break;
+                    case 'w_med':    vA = tw(a).signals?.medium_term || ''; vB = tw(b).signals?.medium_term || ''; break;
+                    case 'w_rsi':    vA = tw(a).rsi; vB = tw(b).rsi; break;
+                    case 'w_dist100':vA = tw(a).dist_ema100; vB = tw(b).dist_ema100; break;
+                    case 'w_dist200':vA = tw(a).dist_ema200; vB = tw(b).dist_ema200; break;
+                    case 'w_ema_lt': vA = tw(a).ema100_lt_ema200 || 'zzz'; vB = tw(b).ema100_lt_ema200 || 'zzz'; break;
+                    default: vA = a.ticker; vB = b.ticker;
+                }
+                if (typeof vA === 'string') return techSort.asc ? vA.localeCompare(vB) : vB.localeCompare(vA);
+                return techSort.asc ? vA - vB : vB - vA;
+            });
+
+            updateTechSortIcons();
+            const tbody = document.getElementById('tech-table-body');
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="14" class="text-center py-8 text-slate-500 text-xs">Sin resultados.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = '';
+            filtered.forEach(item => {
+                const td = item.technical_daily;
+                const tw = item.technical_weekly;
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-800/40 transition-colors border-b border-slate-800/40';
+                tr.innerHTML = empresaCell(item) +
+                    `<td class="py-3 px-2 text-center bg-indigo-950/10 border-l border-slate-800/60">${renderSignalBadge(td.signals.short_term)}</td>
+                     <td class="py-3 px-2 text-center bg-indigo-950/10">${renderSignalBadge(td.signals.medium_term)}</td>
+                     <td class="py-3 px-2 text-center bg-indigo-950/10"><span class="inline-block px-2 py-0.5 text-[11px] rounded-full ${rsiBadge(td.rsi)}">${td.rsi}</span></td>
+                     <td class="py-3 px-2 text-right font-mono text-[11px] ${td.dist_ema100 >= 0 ? 'text-emerald-400' : 'text-rose-400'} bg-indigo-950/10">${td.dist_ema100 > 0 ? '+' : ''}${td.dist_ema100}%</td>
+                     <td class="py-3 px-2 text-right font-mono text-[11px] ${td.dist_ema200 >= 0 ? 'text-emerald-400' : 'text-rose-400'} bg-indigo-950/10">${td.dist_ema200 > 0 ? '+' : ''}${td.dist_ema200}%</td>
+                     <td class="py-3 px-2 text-center border-r border-slate-800/60 bg-indigo-950/10">${renderEmaLtBadge(td.ema100_lt_ema200)}</td>
+                     <td class="py-3 px-2 text-center">${renderSignalBadge(tw.signals.short_term)}</td>
+                     <td class="py-3 px-2 text-center">${renderSignalBadge(tw.signals.medium_term)}</td>
+                     <td class="py-3 px-2 text-center"><span class="inline-block px-2 py-0.5 text-[11px] rounded-full ${rsiBadge(tw.rsi)}">${tw.rsi}</span></td>
+                     <td class="py-3 px-2 text-right font-mono text-[11px] ${tw.dist_ema100 >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${tw.dist_ema100 > 0 ? '+' : ''}${tw.dist_ema100}%</td>
+                     <td class="py-3 px-2 text-right font-mono text-[11px] ${tw.dist_ema200 >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${tw.dist_ema200 > 0 ? '+' : ''}${tw.dist_ema200}%</td>
+                     <td class="py-3 px-2 text-center border-r border-slate-800/60">${renderEmaLtBadge(tw.ema100_lt_ema200)}</td>`;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // ════════════════════════════════════════════════════════════════════════
+        // PESTAÑA FUNDAMENTAL
+        // ════════════════════════════════════════════════════════════════════════
+        function sortFund(col) {
+            fundSort.asc = fundSort.col === col ? !fundSort.asc : true;
+            fundSort.col = col;
+            renderFund();
+        }
+
+        function updateFundSortIcons() {
+            const keys = ['ticker','beta','f_pe_hist','f_pe_sector','f_fwd_pe_hist','f_book_price','pe_ratio','forward_pe','eps','forward_eps'];
+            keys.forEach(k => { const el = document.getElementById(`fs-icon-${k}`); if (el) el.textContent = ''; });
+            const el = document.getElementById(`fs-icon-${fundSort.col}`);
+            if (el) el.textContent = fundSort.asc ? '▲' : '▼';
+        }
+
+        function renderFund() {
+            const search  = document.getElementById('f-search').value.toLowerCase();
+            const sector  = document.getElementById('f-sector').value;
+            const group   = document.getElementById('f-industry-group').value;
+            const subind  = document.getElementById('f-subindustry').value;
+
+            let filtered = rawData.filter(item => {
+                const matchSearch  = item.ticker.toLowerCase().includes(search) || (item.name || '').toLowerCase().includes(search);
+                const matchSector  = sector === 'ALL' || item.sector === sector;
+                const matchGroup   = group  === 'ALL' || item.industry_group === group;
+                const itemSub      = item.sub_industry || item.industry || '—';
+                const matchSubind  = subind === 'ALL' || itemSub === subind;
+                return matchSearch && matchSector && matchGroup && matchSubind;
+            });
+
+            const n = (v) => typeof v === 'number' ? v : -9999;
+            filtered.sort((a, b) => {
+                const fa = a.fundamentals || {};
+                const fb = b.fundamentals || {};
+                let vA, vB;
+                switch (fundSort.col) {
+                    case 'ticker':       vA = a.ticker; vB = b.ticker; break;
+                    case 'beta':         vA = n(fa.beta); vB = n(fb.beta); break;
+                    case 'f_pe_hist':    vA = n(fa.pe_vs_hist_pct); vB = n(fb.pe_vs_hist_pct); break;
+                    case 'f_pe_sector':  vA = n(fa.pe_vs_sector_pct); vB = n(fb.pe_vs_sector_pct); break;
+                    case 'f_fwd_pe_hist':vA = n(fa.forward_pe_vs_hist_pct); vB = n(fb.forward_pe_vs_hist_pct); break;
+                    case 'f_book_price': vA = n(fa.book_price_dev); vB = n(fb.book_price_dev); break;
+                    case 'pe_ratio':     vA = n(a.fundamental?.pe_ratio); vB = n(b.fundamental?.pe_ratio); break;
+                    case 'forward_pe':   vA = n(a.fundamental?.forward_pe); vB = n(b.fundamental?.forward_pe); break;
+                    case 'eps':          vA = n(a.fundamental?.eps); vB = n(b.fundamental?.eps); break;
+                    case 'forward_eps':  vA = n(a.fundamental?.forward_eps); vB = n(b.fundamental?.forward_eps); break;
+                    default: vA = a.ticker; vB = b.ticker;
+                }
+                if (typeof vA === 'string') return fundSort.asc ? vA.localeCompare(vB) : vB.localeCompare(vA);
+                return fundSort.asc ? vA - vB : vB - vA;
+            });
+
+            updateFundSortIcons();
+            const tbody = document.getElementById('fund-table-body');
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="10" class="text-center py-8 text-slate-500 text-xs">Sin resultados.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = '';
+            filtered.forEach(item => {
+                const f   = item.fundamentals || {};
+                const fun = item.fundamental  || {};
+                const sub = item.sub_industry || item.industry || '—';
+                const tr  = document.createElement('tr');
+                tr.className = 'hover:bg-slate-800/40 transition-colors border-b border-slate-800/40';
+                tr.innerHTML = empresaCell(item) +
+                    `<td class="py-3 px-2 text-right font-mono text-slate-300 font-semibold text-[11px] bg-purple-950/10">${f.beta ?? 'N/A'}</td>
+                     <td class="py-3 px-2 text-right text-[11px] bg-purple-950/10">${formatDev(f.pe_vs_hist_pct)}</td>
+                     <td class="py-3 px-2 text-right text-[11px] bg-purple-950/10" title="Mediana subind.: ${f.sector_pe_avg ?? 'N/A'}">${formatDev(f.pe_vs_sector_pct)}</td>
+                     <td class="py-3 px-2 text-right text-[11px] bg-purple-950/10">${formatDev(f.forward_pe_vs_hist_pct)}</td>
+                     <td class="py-3 px-2 text-right text-[11px] bg-purple-950/10">${typeof f.book_price_dev === 'number' ? '<span class="font-mono text-slate-300">' + f.book_price_dev + '</span>' : '<span class="text-slate-600 text-xs">N/A</span>'}</td>
+                     <td class="py-3 px-2 text-right font-mono text-slate-300 text-[11px]">${fun.pe_ratio ?? 'N/A'}</td>
+                     <td class="py-3 px-2 text-right font-mono text-slate-300 text-[11px]">${fun.forward_pe ?? 'N/A'}</td>
+                     <td class="py-3 px-2 text-right font-mono text-slate-300 text-[11px]">${fun.eps !== undefined && fun.eps !== 'N/A' ? '$' + fun.eps : 'N/A'}</td>
+                     <td class="py-3 px-2 text-right font-mono text-slate-300 text-[11px]">${fun.forward_eps !== undefined && fun.forward_eps !== 'N/A' ? '$' + fun.forward_eps : 'N/A'}</td>`;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // ── Oportunidades de compra ─────────────────────────────────────────────
+        function renderOpportunities() {
+            const shortContainer = document.getElementById('short-term-opps');
+            const medContainer   = document.getElementById('med-term-opps');
+
+            const shortOpps = rawData.filter(item => {
+                const td = item.technical_daily;
+                if (!td) return false;
+                return typeof td.rsi === 'number' && td.rsi < 40 &&
+                       (Math.abs(td.dist_ema100) < 6 || Math.abs(td.dist_ema200) < 6);
+            });
+
+            const medOpps = rawData.filter(item => {
+                const tw = item.technical_weekly;
+                if (!tw) return false;
+                return typeof tw.rsi === 'number' && tw.rsi < 40 &&
+                       (Math.abs(tw.dist_ema100) < 6 || Math.abs(tw.dist_ema200) < 6);
+            });
+
+            shortContainer.innerHTML = shortOpps.length > 0
+                ? shortOpps.map(item => `
+                    <button onclick="openModal('${item.ticker}')" class="px-2.5 py-1 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 rounded-lg text-xs font-mono font-bold flex items-center space-x-1.5 transition">
+                        <span>${item.ticker}</span>
+                        <span class="text-[10px] text-emerald-400 font-normal">(${item.technical_daily.rsi} RSI)</span>
+                    </button>`).join('')
+                : `<span class="text-xs text-slate-500 italic">Sin oportunidades de corto plazo.</span>`;
+
+            medContainer.innerHTML = medOpps.length > 0
+                ? medOpps.map(item => `
+                    <button onclick="openModal('${item.ticker}')" class="px-2.5 py-1 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-lg text-xs font-mono font-bold flex items-center space-x-1.5 transition">
+                        <span>${item.ticker}</span>
+                        <span class="text-[10px] text-indigo-400 font-normal">(${item.technical_weekly.rsi} RSI)</span>
+                    </button>`).join('')
+                : `<span class="text-xs text-slate-500 italic">Sin oportunidades de mediano plazo.</span>`;
+        }
+
+        function openModal(ticker) {
+            const item = rawData.find(d => d.ticker === ticker);
+            if (!item) return;
+
+            document.getElementById('modal-title').innerText = `${item.name} (${item.ticker})`;
+            document.getElementById('modal-subtitle').innerText = `Sector GICS: ${item.sector} | Grupo de Industria: ${item.industry_group}`;
+
+            let historyHtml = '<p class="text-xs text-slate-500">Sin registros suficientes de balances trimestrales.</p>';
+            if (item.fundamental.quarterly_history && item.fundamental.quarterly_history.length > 0) {
+                historyHtml = `
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead class="bg-slate-950 text-slate-400 border-b border-slate-800">
+                                <tr>
+                                    <th class="p-2">Trimestre</th>
+                                    <th class="p-2 text-right">EPS Rep.</th>
+                                    <th class="p-2 text-right">EPS Est.</th>
+                                    <th class="p-2 text-right">Var % EPS</th>
+                                    <th class="p-2 text-right">Rev. Est. (B)</th>
+                                    <th class="p-2 text-right">Var % Rev</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-800/80 font-mono">
+                                ${item.fundamental.quarterly_history.map(q => `
+                                    <tr>
+                                        <td class="p-2 text-slate-300">${q.date}</td>
+                                        <td class="p-2 text-right font-bold text-white">${q.eps_reported !== null ? '$'+q.eps_reported : 'N/A'}</td>
+                                        <td class="p-2 text-right text-slate-400">${q.eps_estimated !== null ? '$'+q.eps_estimated : 'N/A'}</td>
+                                        <td class="p-2 text-right ${q.eps_surprise_pct >= 0 ? 'text-emerald-400 font-bold' : 'text-rose-400 font-bold'}">
+                                            ${q.eps_surprise_pct !== null ? (q.eps_surprise_pct >= 0 ? '+' : '') + q.eps_surprise_pct + '%' : 'N/A'}
+                                        </td>
+                                        <td class="p-2 text-right text-slate-400">${q.revenue_estimated_B !== null ? '$'+q.revenue_estimated_B : 'N/A'}</td>
+                                        <td class="p-2 text-right ${q.revenue_surprise_pct >= 0 ? 'text-emerald-400' : 'text-rose-400'}">
+                                            ${q.revenue_surprise_pct !== null ? (q.revenue_surprise_pct >= 0 ? '+' : '') + q.revenue_surprise_pct + '%' : 'N/A'}
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }
+
+            let moatHtml = item.fundamental.moat ? `
+                <div class="bg-slate-950 p-4 rounded-xl border border-emerald-900/30 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-400">Ventajas Competitivas (Moat)</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${item.fundamental.moat}</p>
+                </div>` : '';
+
+            let risksHtml = item.fundamental.risks ? `
+                <div class="bg-slate-950 p-4 rounded-xl border border-rose-900/30 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-rose-400">Desventajas y Riesgos Principales</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${item.fundamental.risks}</p>
+                </div>` : '';
+
+            let qualitativeGrid = (moatHtml || risksHtml) ? `
+                <div class="grid grid-cols-1 ${moatHtml && risksHtml ? 'md:grid-cols-2' : 'grid-cols-1'} gap-4">
+                    ${moatHtml}
+                    ${risksHtml}
+                </div>` : '';
+
+            let outlookSectionHtml = (item.fundamental.future_outlook && item.fundamental.future_outlook.trim() !== '') ? `
+                <div class="bg-slate-950 p-4 rounded-xl border border-indigo-900/40 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-300">Observaciones Futuras y Perspectivas Verificadas</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${item.fundamental.future_outlook}</p>
+                </div>` : '';
+
+            document.getElementById('modal-content').innerHTML = `
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400">Resumen del Modelo de Negocio</h4>
+                    <p class="text-xs text-slate-200 leading-relaxed">${item.business_model.summary || 'Sin resumen registrado.'}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-xs">
+                        <div><span class="text-slate-400 block font-semibold">Actividad Principal:</span> <span class="text-slate-300">${item.business_model.main_activity}</span></div>
+                        <div><span class="text-slate-400 block font-semibold">Mayor Fuente de Ingresos:</span> <span class="text-slate-300">${item.business_model.revenue_source}</span></div>
+                    </div>
+                </div>
+
+                ${qualitativeGrid}
+
+                ${outlookSectionHtml}
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Competidores Directos Verificados</h4>
+                    <div class="flex flex-wrap gap-2">
+                        ${item.fundamental.competitors.length > 0
+                            ? item.fundamental.competitors.map(c => `<span class="px-3 py-1 bg-slate-900 border border-slate-700 rounded-md text-xs font-mono font-bold text-indigo-300">${c}</span>`).join('')
+                            : '<span class="text-xs text-slate-500">Sin pares directos mapeados.</span>'
+                        }
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-purple-900/40 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-purple-300">Variables de Indicadores Fundamentales</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
+
+                        <div class="bg-slate-900 p-3 rounded-lg border border-purple-900/20 space-y-2">
+                            <span class="text-purple-300 font-bold block text-xs border-b border-slate-800 pb-1">Valores de Mercado (al momento del cálculo)</span>
+                            <div class="flex justify-between"><span class="text-slate-400">Beta:</span> <span class="text-white font-bold">${(item.fundamentals && item.fundamentals.beta !== undefined) ? item.fundamentals.beta : (item.technical && item.technical.beta !== undefined ? item.technical.beta : 'N/A')}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">P/E Trailing (actual):</span> <span class="text-white">${item.fundamental.pe_ratio !== undefined ? item.fundamental.pe_ratio : 'N/A'}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">P/E Histórico Prom. (3A):</span> <span class="text-white">${(item.fundamentals && item.fundamentals.pe_hist_avg_3y !== undefined) ? item.fundamentals.pe_hist_avg_3y : 'N/A'}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">P/E Promedio del Sector:</span> <span class="text-white">${(item.fundamentals && item.fundamentals.sector_pe_avg !== undefined) ? item.fundamentals.sector_pe_avg : 'N/A'}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Forward P/E (actual):</span> <span class="text-white">${item.fundamental.forward_pe !== undefined ? item.fundamental.forward_pe : 'N/A'}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">EPS Trailing:</span> <span class="text-white">${item.fundamental.eps !== undefined ? '$' + item.fundamental.eps : 'N/A'}</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Métricas Book Price:</span> <span class="${(item.fundamentals && item.fundamentals.extended_eligible) ? 'text-emerald-400' : 'text-slate-500'}">${(item.fundamentals && item.fundamentals.extended_eligible) ? 'Aplicables (sector tangible)' : 'No aplicables (activos intangibles)'}</span></div>
+                        </div>
+
+                        <div id="fund-devs-modal" class="bg-slate-900 p-3 rounded-lg border border-purple-900/20 space-y-2">
+                            <span class="text-purple-300 font-bold block text-xs border-b border-slate-800 pb-1">Desvíos Calculados (indicadores de la tabla)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400">Historial de Balances (Últimos 8 Trimestres)</h4>
+                    ${historyHtml}
+                </div>
+            `;
+
+            document.getElementById('detail-modal').classList.remove('hidden');
+
+            const devsEl = document.getElementById('fund-devs-modal');
+            if (devsEl) {
+                const f = item.fundamentals || {};
+                const fmtDev = (v) => {
+                    if (typeof v !== 'number') return '<span class="text-slate-500">N/A</span>';
+                    const cls = v >= 0 ? 'text-emerald-400' : 'text-rose-400';
+                    return '<span class="' + cls + ' font-bold">' + (v > 0 ? '+' : '') + v + '%</span>';
+                };
+                devsEl.innerHTML +=
+                    '<div class="flex justify-between"><span class="text-slate-400">Desv. P/E vs Hist. (3A):</span> ' + fmtDev(f.pe_vs_hist_pct) + '</div>' +
+                    '<div class="flex justify-between"><span class="text-slate-400">Desv. P/E vs Sector:</span> '      + fmtDev(f.pe_vs_sector_pct) + '</div>' +
+                    '<div class="flex justify-between"><span class="text-slate-400">Desv. Forward P/E vs Hist.:</span> ' + fmtDev(f.forward_pe_vs_hist_pct) + '</div>' +
+                    '<div class="flex justify-between"><span class="text-slate-400">Price / Book Price:</span> '          + (f.book_price_dev) + '</div>';
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('detail-modal').classList.add('hidden');
+        }
+
+        // ── Barómetro Macro Global ────────────────────────────────────────────────
+        const MACRO_DEFS = [
+            {
+                id: 'DXY',
+                label: 'DXY (Dólar Index)',
+                unit: 'pts',
+                fmt: v => v.toFixed(2),
+                signal: v => v < 100 ? 'green' : v <= 105 ? 'yellow' : 'red',
+                desc: 'Mide el valor ponderado del dólar estadounidense (USD) frente a una canasta de 6 divisas globales principales (Euro, Yen, Libra, Dólar Canadiense, Corona Sueca y Francófono Suizo).',
+                interp: 'Un DXY inferior a 100 (Verde) refleja liquidez expansiva en USD, favoreciendo el apetito por activos de riesgo global (acciones y commodities). Entre 100 y 105 (Amarillo) es un entorno moderado. Superior a 105 (Rojo) denota fuerte aversión al riesgo y endurecimiento monetario global.',
+                varInterp: 'Una variación positiva (+%) indica fortalecimiento del dólar, lo cual suele generar presión bajista sobre los activos financieros y mercados emergentes. Una variación negativa (-%) afloja las condiciones financieras globales.'
+            },
+            {
+                id: 'VIX',
+                label: 'VIX (Volatilidad)',
+                unit: 'pts',
+                fmt: v => v.toFixed(2),
+                signal: v => v < 15 ? 'green' : v <= 25 ? 'yellow' : 'red',
+                desc: 'Índice de Volatilidad CBOE. Mide las expectativas de volatilidad a 30 días del mercado de opciones sobre el índice S&P 500. Es ampliamente conocido como el "índice del miedo".',
+                interp: 'Un VIX por debajo de 15 (Verde) representa complacencia o baja volatilidad en el mercado. Valores entre 15 y 25 (Amarillo) muestran una volatilidad normal. Niveles superiores a 25 (Rojo) implican alto estrés, incertidumbre o pánico en los mercados.',
+                varInterp: 'Un incremento súbito (+%) refleja una rápida acumulación de coberturas por riesgo de caída en renta variable. Una caída (-%) indica estabilización o recuperación de confianza en los precios.'
+            },
+            {
+                id: 'HY_SPREAD',
+                label: 'HY Credit Spread',
+                unit: 'bps',
+                fmt: v => Math.round(v) + ' bps',
+                signal: v => v < 300 ? 'green' : v <= 500 ? 'yellow' : 'red',
+                desc: 'Diferencial de rendimiento (Credit Spread) pagado por bonos corporativos de alto rendimiento ("Junk Bonds" o High Yield) por encima de los bonos del Tesoro estadounidense libres de riesgo.',
+                interp: 'Un spread menor a 300 bps (Verde) indica alta salud crediticia y liquidez corporativa. Entre 300 y 500 bps (Amarillo) muestra alerta y prudencia en la concesión de crédito. Mayor a 500 bps (Rojo) señala grave estrés crediticio y elevado riesgo de default recesivo.',
+                varInterp: 'Un ensanchamiento del spread (+%) refleja que los inversores exigen mayor prima por riesgo crediticio corporativo. Un estrechamiento (-%) favorece la valuación de activos corporativos.'
+            },
+            {
+                id: 'YIELD_CURVE',
+                label: 'Curva Tipos (10Y-2Y)',
+                unit: 'bps',
+                fmt: v => Math.round(v) + ' bps',
+                signal: v => v > 0 ? 'green' : v >= -50 ? 'yellow' : 'red',
+                desc: 'Diferencia de tasa de interés entre el bono del Tesoro de EE.UU. a 10 años y el bono a 2 años. Refleja la salud y expectativa de crecimiento de la economía.',
+                interp: 'Valores superiores a 0 bps (Verde) indican una curva normal sustentada en expansión económica. Entre -50 bps y 0 bps (Amarillo) señala un aplanamiento de alerta. Inferior a -50 bps (Rojo) indica una inversión profunda de la curva, un predictor histórico de recesión.',
+                varInterp: 'Un incremento positivo (+%) hacia terreno normal refleja steepening de la curva. Una desinversión acelerada desde terreno negativo suele ser el aviso inminente de recesión según ciclos históricos.'
+            },
+            {
+                id: 'MOVE_VIX',
+                label: 'MOVE / VIX Ratio',
+                unit: 'ratio',
+                fmt: v => v.toFixed(3),
+                signal: v => v < 5 ? 'green' : v <= 8 ? 'yellow' : 'red',
+                desc: 'Relación entre la volatilidad implícita del mercado de renta fija/bonos (Índice MOVE) y la volatilidad del mercado de acciones (VIX). Mide la tensión relativa entre ambos mercados.',
+                interp: 'Un ratio menor a 5.0 (Verde) representa un equilibrio armónico de riesgos. De 5.0 a 8.0 (Amarillo) muestra tensión focalizada en tasas e inflación. Mayor a 8.0 (Rojo) advierte sobre una fuerte dislocación del mercado de bonos que amenaza contagiar al mercado bursátil.',
+                varInterp: 'Un aumento (+%) en la razón implica que el mercado de renta fija se está desestabilizando a un ritmo superior al mercado accionario, presagiando revalorizaciones violentas de la tasa de descuento.'
+            },
+            {
+                id: 'COPPER_GOLD',
+                label: 'Ratio Cobre / Oro',
+                unit: 'ratio',
+                fmt: v => v.toFixed(5),
+                signal: v => v > 0.0045 ? 'green' : v >= 0.003 ? 'yellow' : 'red',
+                desc: 'Razón entre el precio del Cobre (metal industrial fuertemente ligado a la producción) y el Oro (activo de cobertura defensivo y refugio de valor).',
+                interp: 'Un ratio superior a 0.0045 (Verde) señala fuerte apetito por crecimiento e inversión industrial. Entre 0.003 y 0.0045 (Amarillo) indica un escenario de crecimiento moderado. Un ratio menor a 0.003 (Rojo) advierte sobre estancamiento o aversión al riesgo.',
+                varInterp: 'Un aumento (+%) refleja optimismo de demanda industrial global y mayores rendimientos esperados en bonos. Una contracción (-%) señala refugio hacia activos defensivos.'
+            },
+            {
+                id: 'GLOBAL_M2',
+                label: 'Global M2 Growth',
+                unit: '% YoY',
+                fmt: v => v.toFixed(2) + '% YoY',
+                signal: v => v > 5 ? 'green' : v >= 2 ? 'yellow' : 'red',
+                desc: 'Crecimiento porcentual interanual (YoY) de la oferta monetaria global (efectivo, depósitos corrientes y activos líquidos) de los principales Bancos Centrales (Fed, BCE, PBoC, BoJ).',
+                interp: 'Crecimiento mayor al 5% (Verde) respalda la expansión monetaria y la inflación de múltiplos bursátiles. Entre 2% y 5% (Amarillo) representa liquidez estable. Menor al 2% (Rojo) señala contracción de oferta monetaria y compresión de valuaciones.',
+                varInterp: 'Una aceleración (+%) inyecta liquidez directa a los mercados financieros impulsando las cotizaciones. Una desaceleración (-%) restringe el flujo financiero hacia activos de riesgo.'
+            },
+            {
+                id: 'GLOBAL_INFLATION',
+                label: 'Inflación Global Mom.',
+                unit: '% MoM',
+                fmt: v => v.toFixed(3) + '% MoM',
+                signal: v => v < 0.2 ? 'green' : v < 0.4 ? 'yellow' : 'red',
+                desc: 'Tasa mensual de variación (% MoM) del Índice de Precios al Consumidor agregado global. Mide el ritmo de presión inflacionaria a corto plazo.',
+                interp: 'Lecturas inferiores a 0.2% MoM (Verde) corresponden a una inflación contenida en el objetivo de bancos centrales (~2% anualizado). Entre 0.2% y 0.4% (Amarillo) alerta presiones de costos moderadas. Mayor a 0.4% (Rojo) señala alerta de inflación alta y riesgo de alza de tasas.',
+                varInterp: 'Incrementos (+%) elevan la expectativa de tasas altas por más tiempo (Hawkish). Caídas (-%) abren la puerta para recortes de tasas y políticas monetarias más expansivas (Dovish).'
+            },
+        ];
+
+        const DOT_CLASS = {
+            green:  'bg-emerald-400 shadow-[0_0_5px_1px_rgba(52,211,153,0.6)]',
+            yellow: 'bg-amber-400 shadow-[0_0_5px_1px_rgba(251,191,36,0.6)]',
+            red:    'bg-rose-400 shadow-[0_0_5px_1px_rgba(251,113,133,0.6)]',
+        };
+        const VAR_CLASS = { pos: 'text-emerald-400', neg: 'text-rose-400', zero: 'text-slate-500' };
+
+        function createIndicatorHTML(def, data) {
+            const entry = data[def.id];
+            const val  = entry && entry.value !== null && entry.value !== undefined ? entry.value : null;
+            const prev = entry && entry.prev  !== null && entry.prev  !== undefined ? entry.prev  : null;
+
+            if (val === null) {
+                return `<div onclick="openMacroModal('${def.id}')" class="flex items-center gap-2 py-[4px] px-2 rounded cursor-pointer hover:bg-slate-800/60 transition-colors border-b border-slate-800/40 last:border-0">
+                    <span class="w-2 h-2 rounded-full bg-slate-700 flex-shrink-0"></span>
+                    <span class="text-slate-400 flex-1 text-[11px] truncate">${def.label}</span>
+                    <span class="font-mono text-slate-600 text-[11px]">N/D</span>
+                </div>`;
+            }
+
+            const sig = def.signal(val);
+            const dotCls = DOT_CLASS[sig] || DOT_CLASS.yellow;
+
+            let varHtml = '<span class="text-slate-600 text-[10px] w-14 text-right">—</span>';
+            if (prev !== null && prev !== 0) {
+                const pct = ((val - prev) / Math.abs(prev)) * 100;
+                const cls = pct > 0.05 ? VAR_CLASS.pos : pct < -0.05 ? VAR_CLASS.neg : VAR_CLASS.zero;
+                varHtml = `<span class="${cls} font-mono text-[10px] w-14 text-right tabular-nums">${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%</span>`;
+            }
+
+            return `<div onclick="openMacroModal('${def.id}')" class="flex items-center gap-2 py-[4px] px-2 rounded cursor-pointer hover:bg-slate-800/80 transition-all group border-b border-slate-800/40 last:border-0" title="Haz clic para ver explicación completa de ${def.label}">
+                <span class="w-2 h-2 rounded-full flex-shrink-0 ${dotCls}"></span>
+                <span class="text-slate-300 group-hover:text-indigo-300 flex-1 text-[11px] truncate transition-colors">${def.label}</span>
+                <span class="font-mono text-white text-[11px] tabular-nums">${def.fmt(val)}</span>
+                ${varHtml}
+            </div>`;
+        }
+
+        async function loadMacro() {
+            const panel = document.getElementById('macro-panel');
+            try {
+                const resp = await fetch('macro.json');
+                if (!resp.ok) throw new Error('macro.json no encontrado');
+                const data = await resp.json();
+                macroDataCache = data;
+
+                if (data.last_updated) {
+                    document.getElementById('macro-updated').textContent = data.last_updated;
+                }
+
+                const half = Math.ceil(MACRO_DEFS.length / 2);
+                const col1Defs = MACRO_DEFS.slice(0, half);
+                const col2Defs = MACRO_DEFS.slice(half);
+
+                const col1Html = col1Defs.map(def => createIndicatorHTML(def, data)).join('');
+                const col2Html = col2Defs.map(def => createIndicatorHTML(def, data)).join('');
+
+                panel.innerHTML = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+                        <div class="flex flex-col gap-1">${col1Html}</div>
+                        <div class="flex flex-col gap-1">${col2Html}</div>
+                    </div>
+                `;
+
+            } catch (err) {
+                console.warn('macro.json no disponible:', err.message);
+                panel.innerHTML = `<span class="text-[11px] text-slate-500 italic">Ejecutá el ETL para generar macro.json.</span>`;
+            }
+        }
+
+        function openMacroModal(indicatorId) {
+            const def = MACRO_DEFS.find(d => d.id === indicatorId);
+            if (!def) return;
+
+            const entry = macroDataCache[indicatorId] || {};
+            const val = entry.value !== undefined && entry.value !== null ? entry.value : null;
+            const prev = entry.prev !== undefined && entry.prev !== null ? entry.prev : null;
+
+            document.getElementById('macro-modal-title').innerText = def.label;
+            document.getElementById('macro-modal-subtitle').innerText = `Unidad de Medida: ${def.unit}`;
+
+            const dotEl = document.getElementById('macro-modal-dot');
+            let signalText = 'DESCONOCIDO';
+            let signalBg = 'bg-slate-700';
+            let signalBadgeClass = 'bg-slate-800 text-slate-300 border-slate-700';
+
+            if (val !== null) {
+                const sig = def.signal(val);
+                dotEl.className = `w-3.5 h-3.5 rounded-full flex-shrink-0 ${DOT_CLASS[sig]}`;
+                if (sig === 'green') {
+                    signalText = 'EXPANSIVO / FAVORABLE (VERDE)';
+                    signalBadgeClass = 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40';
+                } else if (sig === 'yellow') {
+                    signalText = 'NEUTRO / ALERTA MODERADA (AMARILLO)';
+                    signalBadgeClass = 'bg-amber-500/20 text-amber-300 border-amber-500/40';
+                } else {
+                    signalText = 'ESTRÉS / ADVERSO (ROJO)';
+                    signalBadgeClass = 'bg-rose-500/20 text-rose-300 border-rose-500/40';
+                }
+            } else {
+                dotEl.className = 'w-3.5 h-3.5 rounded-full bg-slate-700 flex-shrink-0';
+            }
+
+            let varDisplay = 'Sin variación previa';
+            let varColor = 'text-slate-400';
+            if (val !== null && prev !== null && prev !== 0) {
+                const pct = ((val - prev) / Math.abs(prev)) * 100;
+                varColor = pct > 0.05 ? 'text-emerald-400' : pct < -0.05 ? 'text-rose-400' : 'text-slate-400';
+                varDisplay = `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}% vs. lectura previa (${def.fmt(prev)})`;
+            }
+
+            const valDisplay = val !== null ? def.fmt(val) : 'N/D';
+
+            document.getElementById('macro-modal-content').innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-950 p-4 rounded-xl border border-slate-800">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">Valor Actual</span>
+                        <span class="text-xl font-mono font-bold text-white">${valDisplay}</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">Variación %</span>
+                        <span class="text-sm font-mono font-bold ${varColor}">${varDisplay}</span>
+                    </div>
+                    <div class="md:col-span-2 pt-2 border-t border-slate-800/80">
+                        <span class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1">Estado de Riesgo</span>
+                        <span class="inline-block px-2.5 py-1 text-xs font-mono font-bold rounded-md border ${signalBadgeClass}">${signalText}</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-400 flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        ¿Qué mide este indicador?
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${def.desc}</p>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        Cómo interpretar el nivel actual
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${def.interp}</p>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path></svg>
+                        Interpretación de la Variación
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">${def.varInterp}</p>
+                </div>
+            `;
+
+            document.getElementById('macro-detail-modal').classList.remove('hidden');
+        }
+
+        function closeMacroModal() {
+            document.getElementById('macro-detail-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
