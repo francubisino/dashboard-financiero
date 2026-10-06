@@ -2047,9 +2047,9 @@ def fetch_macro_indicators() -> dict:
 
 
 def main():
-    excel_file = "https://raw.githubusercontent.com/francubisino/dashboard-financiero/main/Seguimiento.xls"
+    excel_file = "Seguimiento.xls"
     if not os.path.exists(excel_file):
-        excel_file = "https://raw.githubusercontent.com/francubisino/dashboard-financiero/main/Seguimiento.xls"
+        excel_file = "Seguimiento.xls"
 
     if not os.path.exists(excel_file):
         print(f"[!] No se encontró el libro Excel '{excel_file}'.")
