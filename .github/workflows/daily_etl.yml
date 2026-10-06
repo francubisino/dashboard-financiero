@@ -2,12 +2,12 @@ name: Pipeline Diario de Finanzas Cuantitativas
 
 on:
   schedule:
-    # Ejecución automática a las 21:00 hs ART (UTC-3 -> 00:00 UTC)
+    # Ejecución automática todos los días a las 00:00 UTC (21:00 hs ART / UTC-3)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Permite ejecutar el script manualmente desde la interfaz de GitHub
+  workflow_dispatch: # Permite la ejecución manual desde la pestaña Actions de GitHub
 
 jobs:
-  build-and-deploy:
+  ejecutar-etl:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,26 +16,25 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Configurar Entorno de Python
+      - name: Configurar Entorno Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Instalar Dependencias Cuantitativas
         run: |
           python -m pip install --upgrade pip
           pip install pandas numpy yfinance requests
 
-      - name: Ejecutar Script ETL
+      - name: Ejecutar Script ETL Financiero
         run: |
           python etl_script.py
 
-      - name: Persistir Cambios en GitHub (JSONs)
+      - name: Persistir Archivos JSON en GitHub
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add macro.json data.json
           
-          # Hacer commit solo si existen modificaciones en los archivos de datos
+          # Realiza commit únicamente si existen cambios detectados en los JSONs
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): actualización automática de datos cuantitativos [skip ci]" && git push)
