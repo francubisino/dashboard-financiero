@@ -1,31 +1,31 @@
 {
     "DXY": {
-        "value": 102.141,
-        "prev": 98.77
+        "value": 102.193,
+        "prev": 99.09
     },
     "VIX": {
-        "value": 15.9,
-        "prev": 16.46
+        "value": 15.24,
+        "prev": 17.84
     },
     "COPPER": {
-        "value": 6.574,
-        "prev": 6.8035
+        "value": 6.683,
+        "prev": 6.467
     },
     "GOLD": {
-        "value": 4158.1001,
-        "prev": 4460.7002
+        "value": 4201.7998,
+        "prev": 4407.2998
     },
     "COPPER_GOLD": {
-        "value": 0.001581,
-        "prev": 0.001525
+        "value": 0.001591,
+        "prev": 0.001467
     },
     "HY_SPREAD": {
         "value": 3.09,
         "prev": 3.03
     },
     "YIELD_CURVE": {
-        "value": 51.0,
-        "prev": 48.0
+        "value": 47.0,
+        "prev": 51.0
     },
     "GLOBAL_M2": {
         "value": 5.66,
@@ -36,8 +36,8 @@
         "prev": 0.126
     },
     "MOVE_VIX": {
-        "value": 6.282,
-        "prev": 4.662
+        "value": 6.608,
+        "prev": 4.302
     },
     "GLOBAL_PMI": {
         "value": null,
@@ -51,5 +51,5 @@
         "value": null,
         "prev": null
     },
-    "last_updated": "2026-10-08 17:24:31"
+    "last_updated": "2026-10-09 11:18:34"
 }
