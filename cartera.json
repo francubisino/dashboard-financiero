@@ -11,100 +11,100 @@
             "ticker": "UBER",
             "name": "Uber Technologies, Inc.",
             "quantity": 175,
-            "price": 56775.0,
-            "total": 9935625.0
+            "price": 57625.0,
+            "total": 10084375.0
         },
         {
             "ticker": "TSM",
             "name": "Taiwan Semiconductor Manufacturing Company Limited",
             "quantity": 26,
-            "price": 81850.0,
-            "total": 2128100.0
+            "price": 80750.0,
+            "total": 2099500.0
         },
         {
             "ticker": "TSLA",
             "name": "Tesla, Inc.",
             "quantity": 85,
-            "price": 40260.0,
-            "total": 3422100.0
+            "price": 41180.0,
+            "total": 3500300.0
         },
         {
             "ticker": "NVDA",
             "name": "NVIDIA Corporation",
             "quantity": 465,
-            "price": 15530.0,
-            "total": 7221450.0
+            "price": 15430.0,
+            "total": 7174950.0
         },
         {
             "ticker": "NU",
             "name": "Nu Holdings Ltd.",
             "quantity": 188,
-            "price": 12380.0,
-            "total": 2327440.0
+            "price": 12780.0,
+            "total": 2402640.0
         },
         {
             "ticker": "MU",
             "name": "Micron Technology, Inc.",
             "quantity": 11,
-            "price": 334600.0,
-            "total": 3680600.0
+            "price": 331600.0,
+            "total": 3647600.0
         },
         {
             "ticker": "MELI",
             "name": "MercadoLibre, Inc.",
             "quantity": 150,
-            "price": 24910.0,
-            "total": 3736500.0
+            "price": 25100.0,
+            "total": 3765000.0
         },
         {
             "ticker": "GOOGL",
             "name": "Alphabet Inc.",
             "quantity": 1932,
-            "price": 9700.0,
-            "total": 18740400.0
+            "price": 9860.0,
+            "total": 19049520.0
         },
         {
             "ticker": "CEG",
             "name": "Constellation Energy Corporation",
             "quantity": 298,
-            "price": 10220.0,
-            "total": 3045560.0
+            "price": 10700.0,
+            "total": 3188600.0
         },
         {
             "ticker": "AXP",
             "name": "American Express Company",
             "quantity": 135,
-            "price": 33139.94,
-            "total": 4473891.9
+            "price": 33100.0,
+            "total": 4468500.0
         },
         {
             "ticker": "AVGO",
             "name": "Broadcom Inc.",
             "quantity": 116,
-            "price": 14930.0,
-            "total": 1731880.0
+            "price": 15020.0,
+            "total": 1742320.0
         },
         {
             "ticker": "ASML",
             "name": "ASML Holding N.V.",
             "quantity": 100,
-            "price": 19540.0,
-            "total": 1954000.0
+            "price": 19640.0,
+            "total": 1964000.0
         },
         {
             "ticker": "AMZN",
             "name": "Amazon.com, Inc.",
             "quantity": 3514,
-            "price": 2860.0,
-            "total": 10050040.0
+            "price": 2932.5,
+            "total": 10304805.0
         },
         {
             "ticker": "AAPL",
             "name": "Apple Inc.",
             "quantity": 187,
-            "price": 27500.0,
-            "total": 5142500.0
+            "price": 26980.0,
+            "total": 5045260.0
         }
     ],
-    "last_updated": "2026-10-09 11:18:37"
+    "last_updated": "2026-10-09 16:55:25"
 }
