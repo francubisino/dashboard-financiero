@@ -2061,6 +2061,7 @@ def fetch_portfolio(excel_file: str = "cartera.xlsm", names: dict = None) -> dic
 
     df_hold = pd.read_excel(excel_file, sheet_name="Cartera Cedears")
     df_hold = df_hold.rename(columns=lambda c: str(c).strip())
+    df_hold = df_hold.sort_values(by="Empresa", ascending=False)
 
     positions = []
     for _, row in df_hold.iterrows():
@@ -2083,7 +2084,8 @@ def fetch_portfolio(excel_file: str = "cartera.xlsm", names: dict = None) -> dic
             "ticker": sym,
             "name": names.get(sym, sym),
             "quantity": int(q) if float(q).is_integer() else float(q),
-            "price": price
+            "price": price,
+            "total": round(price * int(q), 2) if price is not None else None
         })
 
     return {

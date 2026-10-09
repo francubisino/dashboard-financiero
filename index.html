@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuantMonitor Pro - Dashboard Financiero & Stock Picker</title>
+    <title>Dashboard Financiero</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,8 +32,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-lg font-bold text-white tracking-wide">QuantMonitor <span class="text-xs text-indigo-400 font-medium">GICS Pro</span></h1>
-                    <p class="text-[10px] text-slate-400">Análisis Fundamental &amp; Técnico Multi-temporal (Diario / Semanal)</p>
+                    <h1 class="text-lg font-bold text-white tracking-wide">Dashboard financiero</h1>
+                    <p class="text-[10px] text-slate-400">Análisis fundamental, técnico y seguimiento de cartera</p>
                 </div>
             </div>
             <div id="last-updated" class="text-xs font-mono text-slate-400 bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
@@ -95,6 +95,11 @@
 
         <!-- ===== PESTAÑAS ===== -->
         <div class="mb-1 flex gap-1 border-b border-slate-800">
+            <button id="tab-btn-cartera"
+                onclick="switchTab('cartera')"
+                class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-transparent text-slate-500 hover:text-slate-300">
+                💼 Cartera
+            </button>
             <button id="tab-btn-tecnico"
                 onclick="switchTab('tecnico')"
                 class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-indigo-500 text-indigo-300 bg-slate-900">
@@ -104,11 +109,6 @@
                 onclick="switchTab('fundamental')"
                 class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-transparent text-slate-500 hover:text-slate-300">
                 🔬 Análisis Fundamental
-            </button>
-            <button id="tab-btn-cartera"
-                onclick="switchTab('cartera')"
-                class="tab-btn px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-t-lg transition border-b-2 border-transparent text-slate-500 hover:text-slate-300">
-                💼 Cartera
             </button>
         </div>
 
@@ -256,8 +256,9 @@
                     <thead class="bg-slate-950 uppercase tracking-wider text-slate-400 border-b border-slate-800">
                         <tr>
                             <th class="py-3 px-3">Empresa</th>
-                            <th class="py-3 px-3 text-right">Tenencia (cant.)</th>
-                            <th class="py-3 px-3 text-right">Último Precio CEDEAR (ARS)</th>
+                            <th class="py-3 px-3 text-right">Cantidad</th>
+                            <th class="py-3 px-3 text-right">Últ. Precio</th>
+                            <th class="py-3 px-3 text-right">Total</th>
                         </tr>
                     </thead>
                     <tbody id="cartera-table-body" class="divide-y divide-slate-800/60">
