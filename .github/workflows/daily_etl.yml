@@ -24,7 +24,22 @@ jobs:
       - name: Instalar Dependencias Cuantitativas
         run: |
           python -m pip install --upgrade pip
-          pip install pandas numpy yfinance requests xlrd openpyxl
+          pip install pandas numpy yfinance requests xlrd openpyxl beautifulsoup4 lxml
+      
+      - name: Ejecutar Script de Actualización de Cartera
+        env:
+          # Inyección segura desde los Repository Secrets de GitHub
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
+        run: |
+          python actualizar_cartera.py
+
+      - name: Persistir Cambios en cartera.xlsm
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add cartera.xlsm
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(cartera): actualización automática desde boletos [skip ci]" && git push)
 
       - name: Ejecutar Script ETL Financiero
         run: |

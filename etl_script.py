@@ -2061,7 +2061,7 @@ def fetch_portfolio(excel_file: str = "cartera.xlsm", names: dict = None) -> dic
 
     df_hold = pd.read_excel(excel_file, sheet_name="Cartera Cedears")
     df_hold = df_hold.rename(columns=lambda c: str(c).strip())
-    df_hold = df_hold.sort_values(by="Empresa", ascending=False)
+    df_hold = df_hold.sort_values(by="Empresa", ascending=True)
 
     positions = []
     for _, row in df_hold.iterrows():
@@ -2106,7 +2106,7 @@ def main():
     try:
         df = pd.read_excel(excel_file, sheet_name="Empresas")
         raw_tickers = df.iloc[:, 0].dropna().tolist()
-        tickers = [str(t).strip().upper() for t in raw_tickers if str(t).strip()] #['JPM','BAC','WFC','C'] #
+        tickers = ['JPM'] #[str(t).strip().upper() for t in raw_tickers if str(t).strip()]
     except Exception as e:
         print(f"[!] Error al leer el Excel: {e}")
         return
