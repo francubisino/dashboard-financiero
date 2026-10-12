@@ -1,6 +1,6 @@
 {
     "DXY": {
-        "value": 102.129,
+        "value": 102.127,
         "prev": 99.12
     },
     "VIX": {
@@ -8,11 +8,11 @@
         "prev": 17.84
     },
     "COPPER": {
-        "value": 6.717,
+        "value": 6.7195,
         "prev": 6.4695
     },
     "GOLD": {
-        "value": 4230.5,
+        "value": 4232.3999,
         "prev": 4408.8999
     },
     "COPPER_GOLD": {
@@ -51,5 +51,5 @@
         "value": null,
         "prev": null
     },
-    "last_updated": "2026-10-12 01:02:52"
+    "last_updated": "2026-10-12 01:08:46"
 }
