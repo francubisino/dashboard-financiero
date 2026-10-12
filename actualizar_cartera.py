@@ -364,7 +364,7 @@ def limpiar_archivos_temporales(archivos: List[Path]) -> None:
 def main():
     logging.info("=== INICIANDO PIPELINE CON FILTRO DE ESPECIES ===")
     
-    archivos_boletos = conectar_gmail_y_descargar_adjunto(dias_atras=4)
+    archivos_boletos = conectar_gmail_y_descargar_adjunto(dias_atras=1)
 
     if not archivos_boletos:
         logging.info("No hay archivos de boletos para procesar el día de hoy.")
