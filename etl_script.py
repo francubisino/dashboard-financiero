@@ -2106,7 +2106,7 @@ def main():
     try:
         df = pd.read_excel(excel_file, sheet_name="Empresas")
         raw_tickers = df.iloc[:, 0].dropna().tolist()
-        tickers = ['JPM'] #[str(t).strip().upper() for t in raw_tickers if str(t).strip()]
+        tickers = [str(t).strip().upper() for t in raw_tickers if str(t).strip()]
     except Exception as e:
         print(f"[!] Error al leer el Excel: {e}")
         return
