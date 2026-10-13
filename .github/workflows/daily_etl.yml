@@ -51,6 +51,10 @@ jobs:
           git add cartera.xlsm
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(cartera): actualización automática desde boletos [skip ci]" && git push)
 
+      - name: Ejecutar Script de Actualización de Benchmarks
+        run: |
+          python actualizar_benchmarks.py
+
       - name: Ejecutar Script ETL Financiero
         run: |
           python etl_script.py
@@ -59,7 +63,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add macro.json data.json cartera.json
+          git add macro.json data.json cartera.json benchmarks.json
           
           # Realiza commit únicamente si existen cambios detectados en los JSONs
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): actualización automática de datos cuantitativos [skip ci]" && git push)
