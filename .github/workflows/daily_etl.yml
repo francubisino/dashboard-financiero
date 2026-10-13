@@ -2,8 +2,18 @@ name: Pipeline Diario de Finanzas Cuantitativas
 
 on:
   schedule:
-    # Ejecución automática todos los días a las 00:00 UTC (21:00 hs ART / UTC-3)
+    # Intento 1: 10:00 UTC (07:00 AM ART) - Martes a Sábado
     - cron: '0 10 * * 2-6'
+    
+    # Intento 2: 11:00 UTC (08:00 PM ART) - Martes a Sábado (Mediodía)
+    - cron: '0 11 * * 2-6'
+    
+    # Intento 3: 12:00 UTC (09:00 PM ART) - Martes a Sábado (Cierre parcial / tarde)
+    - cron: '0 12 * * 2-6'
+    
+    # Intento 4: 12:00 UTC (11:00 PM ART) - Martes a Sábado (Cierre parcial / tarde)
+    - cron: '0 14 * * 2-6'
+    
   workflow_dispatch: # Permite la ejecución manual desde la pestaña Actions de GitHub
 
 jobs:
