@@ -1,50 +1,356 @@
-[
-  "UVA;2026-01;2.65",
-  "UVA;2026-02;2.69",
-  "UVA;2026-03;3.06",
-  "UVA;2026-04;3.08",
-  "UVA;2026-05;2.99",
-  "UVA;2026-06;2.41",
-  "UVA;2026-07;2.04",
-  "UVA;2026-08;1.86",
-  "UVA;2026-09;2.01",
-  "UVA;2026-10;0.56",
-  "IPC;2026-01;2.90",
-  "IPC;2026-02;2.90",
-  "IPC;2026-03;3.40",
-  "IPC;2026-04;2.60",
-  "IPC;2026-05;2.10",
-  "IPC;2026-06;1.90",
-  "IPC;2026-07;2.10",
-  "IPC;2026-08;1.70",
-  "Dolar MEP;2026-01;-2.46",
-  "Dolar MEP;2026-02;-2.54",
-  "Dolar MEP;2026-03;0.24",
-  "Dolar MEP;2026-04;1.24",
-  "Dolar MEP;2026-05;-0.95",
-  "Dolar MEP;2026-06;5.87",
-  "Dolar MEP;2026-07;0.20",
-  "Dolar MEP;2026-08;1.10",
-  "Dolar MEP;2026-09;1.18",
-  "Dolar MEP;2026-10;-0.91",
-  "CEDEAR SPY;2026-01;-0.43",
-  "CEDEAR SPY;2026-02;-3.70",
-  "CEDEAR SPY;2026-03;-4.27",
-  "CEDEAR SPY;2026-04;12.33",
-  "CEDEAR SPY;2026-05;4.41",
-  "CEDEAR SPY;2026-06;4.05",
-  "CEDEAR SPY;2026-07;0.87",
-  "CEDEAR SPY;2026-08;3.96",
-  "CEDEAR SPY;2026-09;0.59",
-  "CEDEAR SPY;2026-10;1.90",
-  "CEDEAR QQQ;2026-01;-0.89",
-  "CEDEAR QQQ;2026-02;-5.43",
-  "CEDEAR QQQ;2026-03;-3.66",
-  "CEDEAR QQQ;2026-04;17.27",
-  "CEDEAR QQQ;2026-05;9.79",
-  "CEDEAR QQQ;2026-06;5.10",
-  "CEDEAR QQQ;2026-07;-5.59",
-  "CEDEAR QQQ;2026-08;5.37",
-  "CEDEAR QQQ;2026-09;4.23",
-  "CEDEAR QQQ;2026-10;1.51"
-]
+{
+  "anio": 2026,
+  "generado": "2026-10-13T19:31:13",
+  "formato_plano": [
+    "CEDEAR_QQQ;2026-01;-0.8898",
+    "CEDEAR_QQQ;2026-02;-5.4297",
+    "CEDEAR_QQQ;2026-03;-3.6618",
+    "CEDEAR_QQQ;2026-04;17.2689",
+    "CEDEAR_QQQ;2026-05;9.7939",
+    "CEDEAR_QQQ;2026-06;5.1025",
+    "CEDEAR_QQQ;2026-07;-5.5917",
+    "CEDEAR_QQQ;2026-08;5.3719",
+    "CEDEAR_QQQ;2026-09;4.2266",
+    "CEDEAR_QQQ;2026-10;0.3763",
+    "CEDEAR_SPY;2026-01;-0.4306",
+    "CEDEAR_SPY;2026-02;-3.7001",
+    "CEDEAR_SPY;2026-03;-4.2715",
+    "CEDEAR_SPY;2026-04;12.3332",
+    "CEDEAR_SPY;2026-05;4.4083",
+    "CEDEAR_SPY;2026-06;4.0533",
+    "CEDEAR_SPY;2026-07;0.8713",
+    "CEDEAR_SPY;2026-08;3.9634",
+    "CEDEAR_SPY;2026-09;0.5865",
+    "CEDEAR_SPY;2026-10;1.8465",
+    "CER;2026-01;2.6547",
+    "CER;2026-02;2.6993",
+    "CER;2026-03;3.0526",
+    "CER;2026-04;3.1021",
+    "CER;2026-05;3.0419",
+    "CER;2026-06;2.3073",
+    "CER;2026-07;2.0309",
+    "CER;2026-08;2.0032",
+    "CER;2026-09;1.8657",
+    "CER;2026-10;0.8464",
+    "Dolar_MEP;2026-01;-2.4575",
+    "Dolar_MEP;2026-02;-2.5399",
+    "Dolar_MEP;2026-03;0.2382",
+    "Dolar_MEP;2026-04;1.2371",
+    "Dolar_MEP;2026-05;-0.9458",
+    "Dolar_MEP;2026-06;5.8684",
+    "Dolar_MEP;2026-07;0.2041",
+    "Dolar_MEP;2026-08;1.0972",
+    "Dolar_MEP;2026-09;1.1827",
+    "Dolar_MEP;2026-10;-0.9056",
+    "IPC;2026-01;2.9",
+    "IPC;2026-02;2.9",
+    "IPC;2026-03;3.4",
+    "IPC;2026-04;2.6",
+    "IPC;2026-05;2.1",
+    "IPC;2026-06;1.9",
+    "IPC;2026-07;2.1",
+    "IPC;2026-08;1.7",
+    "UVA;2026-01;2.6455",
+    "UVA;2026-02;2.6857",
+    "UVA;2026-03;3.0627",
+    "UVA;2026-04;3.0822",
+    "UVA;2026-05;2.9864",
+    "UVA;2026-06;2.4057",
+    "UVA;2026-07;2.0398",
+    "UVA;2026-08;1.8601",
+    "UVA;2026-09;2.0136",
+    "UVA;2026-10;0.8464"
+  ],
+  "datos": [
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-01",
+      "valor": -0.8898
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-02",
+      "valor": -5.4297
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-03",
+      "valor": -3.6618
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-04",
+      "valor": 17.2689
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-05",
+      "valor": 9.7939
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-06",
+      "valor": 5.1025
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-07",
+      "valor": -5.5917
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-08",
+      "valor": 5.3719
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-09",
+      "valor": 4.2266
+    },
+    {
+      "indicador": "CEDEAR_QQQ",
+      "mes": "2026-10",
+      "valor": 0.3763
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-01",
+      "valor": -0.4306
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-02",
+      "valor": -3.7001
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-03",
+      "valor": -4.2715
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-04",
+      "valor": 12.3332
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-05",
+      "valor": 4.4083
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-06",
+      "valor": 4.0533
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-07",
+      "valor": 0.8713
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-08",
+      "valor": 3.9634
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-09",
+      "valor": 0.5865
+    },
+    {
+      "indicador": "CEDEAR_SPY",
+      "mes": "2026-10",
+      "valor": 1.8465
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-01",
+      "valor": 2.6547
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-02",
+      "valor": 2.6993
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-03",
+      "valor": 3.0526
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-04",
+      "valor": 3.1021
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-05",
+      "valor": 3.0419
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-06",
+      "valor": 2.3073
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-07",
+      "valor": 2.0309
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-08",
+      "valor": 2.0032
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-09",
+      "valor": 1.8657
+    },
+    {
+      "indicador": "CER",
+      "mes": "2026-10",
+      "valor": 0.8464
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-01",
+      "valor": -2.4575
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-02",
+      "valor": -2.5399
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-03",
+      "valor": 0.2382
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-04",
+      "valor": 1.2371
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-05",
+      "valor": -0.9458
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-06",
+      "valor": 5.8684
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-07",
+      "valor": 0.2041
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-08",
+      "valor": 1.0972
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-09",
+      "valor": 1.1827
+    },
+    {
+      "indicador": "Dolar_MEP",
+      "mes": "2026-10",
+      "valor": -0.9056
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-01",
+      "valor": 2.9
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-02",
+      "valor": 2.9
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-03",
+      "valor": 3.4
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-04",
+      "valor": 2.6
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-05",
+      "valor": 2.1
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-06",
+      "valor": 1.9
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-07",
+      "valor": 2.1
+    },
+    {
+      "indicador": "IPC",
+      "mes": "2026-08",
+      "valor": 1.7
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-01",
+      "valor": 2.6455
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-02",
+      "valor": 2.6857
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-03",
+      "valor": 3.0627
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-04",
+      "valor": 3.0822
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-05",
+      "valor": 2.9864
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-06",
+      "valor": 2.4057
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-07",
+      "valor": 2.0398
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-08",
+      "valor": 1.8601
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-09",
+      "valor": 2.0136
+    },
+    {
+      "indicador": "UVA",
+      "mes": "2026-10",
+      "valor": 0.8464
+    }
+  ]
+}
