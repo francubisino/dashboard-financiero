@@ -8,7 +8,7 @@ Script reutilizable: obtiene la variación % mensual del año en curso para:
   - CEDEAR SPY
   - CEDEAR QQQ
 
-Guarda los datos en variaciones.json con formato:
+Guarda los datos en benchmarks.json con formato:
   [ {"indicador": "...", "mes": "YYYY-MM", "valor": 1.23}, ... ]
   (también se puede leer como "indicador;mes;valor")
 
@@ -39,7 +39,7 @@ HEADERS = {
     "Accept": "application/json,text/plain,*/*",
 }
 TIMEOUT = 25
-OUT_JSON = "variaciones.json"
+OUT_JSON = "benchmarks.json"
 
 # IDs El Tablero (https://eltablero.ar/docs)
 ID_UVA = 31
