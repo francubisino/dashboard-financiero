@@ -451,7 +451,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             loadDatabase();
             loadPortfolio();
-            loadDefault();   // Carga automática del gráfico de rendimiento (variaciones.json)
+            loadDefault();   // Carga automática del gráfico de rendimiento (benchmarks.json)
         });
 
         async function loadDatabase() {
@@ -1329,15 +1329,15 @@
                 datos.length + " puntos · año " + (payload.anio || "—") + gen;
         }
         async function loadDefault() {
-            document.getElementById("status").textContent = "Cargando variaciones.json…";
+            document.getElementById("status").textContent = "Cargando benchmarks.json…";
             try {
-                const r = await fetch("variaciones.json", { cache: "no-store" });
+                const r = await fetch("benchmarks.json", { cache: "no-store" });
                 if (!r.ok) throw new Error("HTTP " + r.status);
                 const payload = await r.json();
                 renderRendimiento(payload);
             } catch (e) {
                 document.getElementById("status").textContent =
-                    "No se pudo cargar variaciones.json (" + e.message + "). Usá el selector de archivo.";
+                    "No se pudo cargar benchmarks.json (" + e.message + "). Usá el selector de archivo.";
             }
         }
         
