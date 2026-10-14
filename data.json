@@ -80,10 +80,10 @@
                 {
                     "date": "2025-01-30",
                     "eps_reported": 2.4,
-                    "eps_estimated": 2.35,
-                    "eps_surprise_pct": 2.13,
+                    "eps_estimated": 2.34,
+                    "eps_surprise_pct": 2.56,
                     "revenue_estimated_B": 25.2,
-                    "revenue_surprise_pct": 0.74
+                    "revenue_surprise_pct": 0.9
                 },
                 {
                     "date": "2024-10-31",
@@ -96,7 +96,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 62.55,
+            "rsi": 62.98,
             "ema7": 338.27,
             "ema14": 336.33,
             "ema21": 334.43,
@@ -134,13 +134,13 @@
             "beta": 1.07,
             "pe_vs_hist_pct": 15.19,
             "pe_hist_avg_3y": 33.97,
-            "pe_vs_sector_pct": -76.87,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -76.86,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:10"
+        "last_updated": "2026-10-14 13:14:34"
     },
     {
         "ticker": "ABBV",
@@ -239,7 +239,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 64.37,
+            "rsi": 65.13,
             "ema7": 273.09,
             "ema14": 269.6,
             "ema21": 267.36,
@@ -283,7 +283,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:12"
+        "last_updated": "2026-10-14 13:14:36"
     },
     {
         "ticker": "ABT",
@@ -382,7 +382,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 54.85,
+            "rsi": 55.35,
             "ema7": 100.48,
             "ema14": 100.58,
             "ema21": 101.31,
@@ -426,7 +426,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:14"
+        "last_updated": "2026-10-14 13:14:38"
     },
     {
         "ticker": "ACN",
@@ -525,7 +525,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 68.13,
+            "rsi": 67.78,
             "ema7": 205.02,
             "ema14": 198.24,
             "ema21": 194.22,
@@ -564,12 +564,12 @@
             "pe_vs_hist_pct": -29.02,
             "pe_hist_avg_3y": 22.19,
             "pe_vs_sector_pct": -90.69,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:16"
+        "last_updated": "2026-10-14 13:14:41"
     },
     {
         "ticker": "ADBE",
@@ -668,7 +668,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 41.38,
+            "rsi": 42.1,
             "ema7": 238.27,
             "ema14": 240.09,
             "ema21": 242.86,
@@ -707,12 +707,12 @@
             "pe_vs_hist_pct": -41.0,
             "pe_hist_avg_3y": 22.36,
             "pe_vs_sector_pct": -92.2,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:18"
+        "last_updated": "2026-10-14 13:14:43"
     },
     {
         "ticker": "ADI",
@@ -811,7 +811,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 60.82,
+            "rsi": 60.81,
             "ema7": 409.21,
             "ema14": 403.58,
             "ema21": 398.08,
@@ -849,13 +849,13 @@
             "beta": 1.23,
             "pe_vs_hist_pct": 56.73,
             "pe_hist_avg_3y": 31.43,
-            "pe_vs_sector_pct": -70.89,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -70.88,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:20"
+        "last_updated": "2026-10-14 13:14:45"
     },
     {
         "ticker": "ADP",
@@ -954,7 +954,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 60.2,
+            "rsi": 50.4,
             "ema7": 269.94,
             "ema14": 267.96,
             "ema21": 267.88,
@@ -992,13 +992,13 @@
             "beta": 0.84,
             "pe_vs_hist_pct": -4.49,
             "pe_hist_avg_3y": 26.41,
-            "pe_vs_sector_pct": -85.1,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -85.09,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:22"
+        "last_updated": "2026-10-14 13:14:47"
     },
     {
         "ticker": "AMAT",
@@ -1097,7 +1097,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 38.5,
+            "rsi": 38.33,
             "ema7": 499.16,
             "ema14": 499.0,
             "ema21": 494.85,
@@ -1135,13 +1135,13 @@
             "beta": 1.59,
             "pe_vs_hist_pct": 45.97,
             "pe_hist_avg_3y": 27.44,
-            "pe_vs_sector_pct": -76.33,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -76.31,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:24"
+        "last_updated": "2026-10-14 13:14:49"
     },
     {
         "ticker": "AMD",
@@ -1240,7 +1240,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.91,
+            "rsi": 52.01,
             "ema7": 613.56,
             "ema14": 608.55,
             "ema21": 595.96,
@@ -1278,13 +1278,13 @@
             "beta": 2.45,
             "pe_vs_hist_pct": 160.04,
             "pe_hist_avg_3y": 59.4,
-            "pe_vs_sector_pct": -8.71,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -8.67,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:26"
+        "last_updated": "2026-10-14 13:14:52"
     },
     {
         "ticker": "AMGN",
@@ -1383,7 +1383,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 53.54,
+            "rsi": 54.49,
             "ema7": 412.0,
             "ema14": 409.99,
             "ema21": 409.03,
@@ -1427,7 +1427,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:28"
+        "last_updated": "2026-10-14 13:14:54"
     },
     {
         "ticker": "AMZN",
@@ -1494,10 +1494,10 @@
                 {
                     "date": "2025-07-31",
                     "eps_reported": 1.68,
-                    "eps_estimated": 1.32,
-                    "eps_surprise_pct": 27.27,
+                    "eps_estimated": 1.33,
+                    "eps_surprise_pct": 26.32,
                     "revenue_estimated_B": 17.64,
-                    "revenue_surprise_pct": 9.55
+                    "revenue_surprise_pct": 9.21
                 },
                 {
                     "date": "2025-05-01",
@@ -1526,7 +1526,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 54.92,
+            "rsi": 54.67,
             "ema7": 257.28,
             "ema14": 255.34,
             "ema21": 254.8,
@@ -1570,7 +1570,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:30"
+        "last_updated": "2026-10-14 13:14:56"
     },
     {
         "ticker": "ANET",
@@ -1669,7 +1669,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 48.4,
+            "rsi": 46.59,
             "ema7": 209.77,
             "ema14": 208.01,
             "ema21": 205.83,
@@ -1707,13 +1707,13 @@
             "beta": 1.6,
             "pe_vs_hist_pct": 39.41,
             "pe_hist_avg_3y": 46.28,
-            "pe_vs_sector_pct": -61.87,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -61.85,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:32"
+        "last_updated": "2026-10-14 13:14:58"
     },
     {
         "ticker": "APA",
@@ -1730,9 +1730,9 @@
         },
         "fundamental": {
             "pe_ratio": 10.15,
-            "forward_pe": 10.33,
+            "forward_pe": 10.35,
             "eps": 4.73,
-            "forward_eps": 4.65,
+            "forward_eps": 4.64,
             "debt_to_equity": 48.85,
             "moat": "Reservas, experiencia operativa y posiciones estratégicas en activos de hidrocarburos.",
             "risks": "Precio del petróleo y gas, declive de reservas, geopolítica y regulación energética.",
@@ -1856,7 +1856,7 @@
             "forward_pe_vs_hist_pct": 56.16,
             "book_price_dev": 2.4
         },
-        "last_updated": "2026-10-14 12:34:34"
+        "last_updated": "2026-10-14 13:15:00"
     },
     {
         "ticker": "APD",
@@ -1955,7 +1955,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 50.26,
+            "rsi": 53.82,
             "ema7": 282.58,
             "ema14": 282.03,
             "ema21": 283.28,
@@ -1999,7 +1999,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": 4.63
         },
-        "last_updated": "2026-10-14 12:34:35"
+        "last_updated": "2026-10-14 13:15:03"
     },
     {
         "ticker": "ASML",
@@ -2016,9 +2016,9 @@
         },
         "fundamental": {
             "pe_ratio": 55.75,
-            "forward_pe": 29.19,
+            "forward_pe": 29.23,
             "eps": 30.81,
-            "forward_eps": 58.85,
+            "forward_eps": 58.77,
             "debt_to_equity": 9.09,
             "moat": "Posición prácticamente monopólica en EUV, tecnología extremadamente compleja, propiedad intelectual y ecosistema de proveedores.",
             "risks": "Restricciones de exportación a China, concentración de clientes y enorme complejidad tecnológica.",
@@ -2098,7 +2098,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 42.43,
+            "rsi": 41.5,
             "ema7": 1769.41,
             "ema14": 1771.52,
             "ema21": 1763.5,
@@ -2136,13 +2136,13 @@
             "beta": 1.3,
             "pe_vs_hist_pct": 20.55,
             "pe_hist_avg_3y": 46.25,
-            "pe_vs_sector_pct": -67.05,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -67.04,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:38"
+        "last_updated": "2026-10-14 13:15:06"
     },
     {
         "ticker": "ASTS",
@@ -2224,11 +2224,11 @@
                 },
                 {
                     "date": "2025-03-03",
-                    "eps_reported": -0.12,
+                    "eps_reported": -0.18,
                     "eps_estimated": -0.18,
-                    "eps_surprise_pct": 33.33,
-                    "revenue_estimated_B": -1.26,
-                    "revenue_surprise_pct": 11.67
+                    "eps_surprise_pct": 0.0,
+                    "revenue_estimated_B": -1.89,
+                    "revenue_surprise_pct": 0.0
                 },
                 {
                     "date": "2024-11-14",
@@ -2241,7 +2241,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 31.03,
+            "rsi": 30.67,
             "ema7": 53.63,
             "ema14": 56.28,
             "ema21": 57.68,
@@ -2280,12 +2280,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:40"
+        "last_updated": "2026-10-14 13:15:08"
     },
     {
         "ticker": "AVGO",
@@ -2301,9 +2301,9 @@
             "revenue_source": "Semiconductors, especialmente networking y custom AI accelerators, complementados por software."
         },
         "fundamental": {
-            "pe_ratio": 44.78,
+            "pe_ratio": 45.63,
             "forward_pe": 18.42,
-            "eps": 7.98,
+            "eps": 7.83,
             "forward_eps": 19.39,
             "debt_to_equity": 59.6,
             "moat": "IP de semiconductores, relaciones con hyperscalers, escala y software empresarial adquirido.",
@@ -2317,6 +2317,14 @@
                 "INTC"
             ],
             "quarterly_history": [
+                {
+                    "date": "2026-09-02",
+                    "eps_reported": 3.32,
+                    "eps_estimated": 3.24,
+                    "eps_surprise_pct": 2.47,
+                    "revenue_estimated_B": 34.86,
+                    "revenue_surprise_pct": 0.86
+                },
                 {
                     "date": "2026-06-03",
                     "eps_reported": 2.44,
@@ -2372,19 +2380,11 @@
                     "eps_surprise_pct": 2.16,
                     "revenue_estimated_B": 14.91,
                     "revenue_surprise_pct": 0.76
-                },
-                {
-                    "date": "2024-09-05",
-                    "eps_reported": 1.24,
-                    "eps_estimated": 1.21,
-                    "eps_surprise_pct": 2.48,
-                    "revenue_estimated_B": 13.02,
-                    "revenue_surprise_pct": 0.87
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 46.26,
+            "rsi": 46.11,
             "ema7": 359.83,
             "ema14": 359.2,
             "ema21": 359.47,
@@ -2420,15 +2420,15 @@
         },
         "fundamentals": {
             "beta": 1.48,
-            "pe_vs_hist_pct": 7.98,
-            "pe_hist_avg_3y": 41.47,
-            "pe_vs_sector_pct": -73.54,
-            "sector_pe_avg": 169.21,
+            "pe_vs_hist_pct": 10.8,
+            "pe_hist_avg_3y": 41.18,
+            "pe_vs_sector_pct": -73.02,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:42"
+        "last_updated": "2026-10-14 13:15:10"
     },
     {
         "ticker": "AXP",
@@ -2519,15 +2519,15 @@
                 {
                     "date": "2024-10-18",
                     "eps_reported": 3.49,
-                    "eps_estimated": 3.28,
-                    "eps_surprise_pct": 6.4,
+                    "eps_estimated": 3.29,
+                    "eps_surprise_pct": 6.08,
                     "revenue_estimated_B": 36.65,
-                    "revenue_surprise_pct": 2.24
+                    "revenue_surprise_pct": 2.13
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 43.32,
+            "rsi": 42.89,
             "ema7": 307.67,
             "ema14": 307.69,
             "ema21": 309.65,
@@ -2565,13 +2565,13 @@
             "beta": 1.08,
             "pe_vs_hist_pct": -6.37,
             "pe_hist_avg_3y": 20.08,
-            "pe_vs_sector_pct": -6.23,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -6.37,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -6.37,
             "book_price_dev": 6.1
         },
-        "last_updated": "2026-10-14 12:34:44"
+        "last_updated": "2026-10-14 13:15:13"
     },
     {
         "ticker": "B",
@@ -2670,7 +2670,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 42.1,
+            "rsi": 40.02,
             "ema7": 40.56,
             "ema14": 40.95,
             "ema21": 41.35,
@@ -2714,7 +2714,7 @@
             "forward_pe_vs_hist_pct": -40.41,
             "book_price_dev": 2.44
         },
-        "last_updated": "2026-10-14 12:34:46"
+        "last_updated": "2026-10-14 13:15:15"
     },
     {
         "ticker": "BA",
@@ -2813,7 +2813,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.18,
+            "rsi": 35.46,
             "ema7": 189.13,
             "ema14": 191.47,
             "ema21": 194.2,
@@ -2857,7 +2857,7 @@
             "forward_pe_vs_hist_pct": -70.25,
             "book_price_dev": 24.17
         },
-        "last_updated": "2026-10-14 12:34:47"
+        "last_updated": "2026-10-14 13:15:17"
     },
     {
         "ticker": "BABA",
@@ -2956,7 +2956,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 53.05,
+            "rsi": 52.03,
             "ema7": 109.6,
             "ema14": 109.58,
             "ema21": 110.19,
@@ -3000,7 +3000,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:49"
+        "last_updated": "2026-10-14 13:15:19"
     },
     {
         "ticker": "BAC",
@@ -3033,6 +3033,14 @@
             ],
             "quarterly_history": [
                 {
+                    "date": "2026-10-14",
+                    "eps_reported": 0.91,
+                    "eps_estimated": 1.11,
+                    "eps_surprise_pct": -18.02,
+                    "revenue_estimated_B": 9.55,
+                    "revenue_surprise_pct": -6.31
+                },
+                {
                     "date": "2026-07-14",
                     "eps_reported": 1.21,
                     "eps_estimated": 1.12,
@@ -3051,10 +3059,10 @@
                 {
                     "date": "2026-01-14",
                     "eps_reported": 0.98,
-                    "eps_estimated": 0.96,
-                    "eps_surprise_pct": 2.08,
+                    "eps_estimated": 0.95,
+                    "eps_surprise_pct": 3.16,
                     "revenue_estimated_B": 10.29,
-                    "revenue_surprise_pct": 0.73
+                    "revenue_surprise_pct": 1.11
                 },
                 {
                     "date": "2025-10-15",
@@ -3087,19 +3095,11 @@
                     "eps_surprise_pct": 6.49,
                     "revenue_estimated_B": 8.61,
                     "revenue_surprise_pct": 2.27
-                },
-                {
-                    "date": "2024-10-15",
-                    "eps_reported": 0.81,
-                    "eps_estimated": 0.76,
-                    "eps_surprise_pct": 6.58,
-                    "revenue_estimated_B": 8.51,
-                    "revenue_surprise_pct": 2.3
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 21.15,
+            "rsi": 19.56,
             "ema7": 54.19,
             "ema14": 54.88,
             "ema21": 55.75,
@@ -3137,13 +3137,13 @@
             "beta": 1.21,
             "pe_vs_hist_pct": -3.67,
             "pe_hist_avg_3y": 12.94,
-            "pe_vs_sector_pct": -37.86,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -37.95,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -3.69,
             "book_price_dev": 1.37
         },
-        "last_updated": "2026-10-14 12:34:52"
+        "last_updated": "2026-10-14 13:15:21"
     },
     {
         "ticker": "BHP",
@@ -3242,7 +3242,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 43.64,
+            "rsi": 40.63,
             "ema7": 85.8,
             "ema14": 85.93,
             "ema21": 86.21,
@@ -3286,7 +3286,7 @@
             "forward_pe_vs_hist_pct": -34.23,
             "book_price_dev": 4.24
         },
-        "last_updated": "2026-10-14 12:34:54"
+        "last_updated": "2026-10-14 13:15:23"
     },
     {
         "ticker": "BLK",
@@ -3318,6 +3318,14 @@
                 "BEN"
             ],
             "quarterly_history": [
+                {
+                    "date": "2026-10-14",
+                    "eps_reported": 15.93,
+                    "eps_estimated": 14.3,
+                    "eps_surprise_pct": 11.4,
+                    "revenue_estimated_B": 167.26,
+                    "revenue_surprise_pct": 3.99
+                },
                 {
                     "date": "2026-07-15",
                     "eps_reported": 13.91,
@@ -3373,19 +3381,11 @@
                     "eps_surprise_pct": 6.33,
                     "revenue_estimated_B": 125.27,
                     "revenue_surprise_pct": 2.21
-                },
-                {
-                    "date": "2024-10-11",
-                    "eps_reported": 11.46,
-                    "eps_estimated": 10.31,
-                    "eps_surprise_pct": 11.15,
-                    "revenue_estimated_B": 120.33,
-                    "revenue_surprise_pct": 3.9
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 54.4,
+            "rsi": 53.47,
             "ema7": 1072.66,
             "ema14": 1072.75,
             "ema21": 1075.68,
@@ -3423,13 +3423,13 @@
             "beta": 1.42,
             "pe_vs_hist_pct": 20.2,
             "pe_hist_avg_3y": 21.23,
-            "pe_vs_sector_pct": 27.28,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": 27.09,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 20.2,
             "book_price_dev": 2.87
         },
-        "last_updated": "2026-10-14 12:34:55"
+        "last_updated": "2026-10-14 13:15:26"
     },
     {
         "ticker": "BMY",
@@ -3528,7 +3528,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 28.61,
+            "rsi": 30.56,
             "ema7": 58.66,
             "ema14": 59.82,
             "ema21": 60.6,
@@ -3572,7 +3572,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:34:57"
+        "last_updated": "2026-10-14 13:15:28"
     },
     {
         "ticker": "BRK-B",
@@ -3671,7 +3671,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 67.73,
+            "rsi": 68.59,
             "ema7": 513.16,
             "ema14": 509.93,
             "ema21": 508.75,
@@ -3709,13 +3709,13 @@
             "beta": 0.59,
             "pe_vs_hist_pct": -43.3,
             "pe_hist_avg_3y": 23.09,
-            "pe_vs_sector_pct": -34.71,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -34.81,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -43.29,
             "book_price_dev": 0.0
         },
-        "last_updated": "2026-10-14 12:34:59"
+        "last_updated": "2026-10-14 13:15:30"
     },
     {
         "ticker": "BX",
@@ -3731,9 +3731,9 @@
             "revenue_source": "Management fees y carried interest."
         },
         "fundamental": {
-            "pe_ratio": 24.6,
+            "pe_ratio": 24.71,
             "forward_pe": 14.84,
-            "eps": 4.47,
+            "eps": 4.45,
             "forward_eps": 7.41,
             "debt_to_equity": 68.19,
             "moat": "Marca, escala, acceso a oportunidades privadas y relaciones institucionales.",
@@ -3814,7 +3814,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 32.64,
+            "rsi": 29.08,
             "ema7": 112.82,
             "ema14": 114.9,
             "ema21": 117.47,
@@ -3850,15 +3850,15 @@
         },
         "fundamentals": {
             "beta": 1.59,
-            "pe_vs_hist_pct": -14.17,
+            "pe_vs_hist_pct": -13.78,
             "pe_hist_avg_3y": 28.66,
-            "pe_vs_sector_pct": 22.69,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": 23.06,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -14.15,
+            "forward_pe_vs_hist_pct": -13.77,
             "book_price_dev": 9.76
         },
-        "last_updated": "2026-10-14 12:35:01"
+        "last_updated": "2026-10-14 13:15:32"
     },
     {
         "ticker": "C",
@@ -3957,7 +3957,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 35.35,
+            "rsi": 33.53,
             "ema7": 128.37,
             "ema14": 129.46,
             "ema21": 130.38,
@@ -3995,13 +3995,13 @@
             "beta": 1.11,
             "pe_vs_hist_pct": 0.74,
             "pe_hist_avg_3y": 12.05,
-            "pe_vs_sector_pct": -39.45,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -39.54,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 0.73,
             "book_price_dev": 1.13
         },
-        "last_updated": "2026-10-14 12:35:03"
+        "last_updated": "2026-10-14 13:15:34"
     },
     {
         "ticker": "CAT",
@@ -4100,7 +4100,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.59,
+            "rsi": 36.1,
             "ema7": 803.02,
             "ema14": 810.53,
             "ema21": 812.84,
@@ -4144,7 +4144,7 @@
             "forward_pe_vs_hist_pct": 42.59,
             "book_price_dev": 18.32
         },
-        "last_updated": "2026-10-14 12:35:05"
+        "last_updated": "2026-10-14 13:15:37"
     },
     {
         "ticker": "CDE",
@@ -4243,7 +4243,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 32.37,
+            "rsi": 31.14,
             "ema7": 16.9,
             "ema14": 17.48,
             "ema21": 17.93,
@@ -4287,7 +4287,7 @@
             "forward_pe_vs_hist_pct": -69.14,
             "book_price_dev": 1.61
         },
-        "last_updated": "2026-10-14 12:35:07"
+        "last_updated": "2026-10-14 13:15:39"
     },
     {
         "ticker": "CEG",
@@ -4386,7 +4386,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 58.99,
+            "rsi": 58.26,
             "ema7": 289.13,
             "ema14": 281.83,
             "ema21": 278.61,
@@ -4424,13 +4424,13 @@
             "beta": 1.13,
             "pe_vs_hist_pct": -9.77,
             "pe_hist_avg_3y": 32.04,
-            "pe_vs_sector_pct": 17.42,
-            "sector_pe_avg": 24.62,
+            "pe_vs_sector_pct": 17.04,
+            "sector_pe_avg": 24.7,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -9.76,
             "book_price_dev": 3.29
         },
-        "last_updated": "2026-10-14 12:35:09"
+        "last_updated": "2026-10-14 13:15:41"
     },
     {
         "ticker": "COP",
@@ -4529,7 +4529,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 70.76,
+            "rsi": 71.0,
             "ema7": 134.64,
             "ema14": 132.4,
             "ema21": 131.64,
@@ -4573,7 +4573,7 @@
             "forward_pe_vs_hist_pct": 37.42,
             "book_price_dev": 2.59
         },
-        "last_updated": "2026-10-14 12:35:12"
+        "last_updated": "2026-10-14 13:15:43"
     },
     {
         "ticker": "COST",
@@ -4616,26 +4616,26 @@
                 {
                     "date": "2026-05-28",
                     "eps_reported": 4.93,
-                    "eps_estimated": 4.97,
-                    "eps_surprise_pct": -0.8,
+                    "eps_estimated": 4.92,
+                    "eps_surprise_pct": 0.2,
                     "revenue_estimated_B": 51.77,
-                    "revenue_surprise_pct": -0.28
+                    "revenue_surprise_pct": 0.07
                 },
                 {
                     "date": "2026-03-05",
                     "eps_reported": 4.58,
-                    "eps_estimated": 4.55,
-                    "eps_surprise_pct": 0.66,
+                    "eps_estimated": 4.54,
+                    "eps_surprise_pct": 0.88,
                     "revenue_estimated_B": 48.09,
-                    "revenue_surprise_pct": 0.23
+                    "revenue_surprise_pct": 0.31
                 },
                 {
                     "date": "2025-12-11",
                     "eps_reported": 4.5,
-                    "eps_estimated": 4.27,
-                    "eps_surprise_pct": 5.39,
+                    "eps_estimated": 4.28,
+                    "eps_surprise_pct": 5.14,
                     "revenue_estimated_B": 47.25,
-                    "revenue_surprise_pct": 1.89
+                    "revenue_surprise_pct": 1.8
                 },
                 {
                     "date": "2025-09-25",
@@ -4672,7 +4672,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 65.63,
+            "rsi": 66.5,
             "ema7": 944.99,
             "ema14": 934.82,
             "ema21": 930.48,
@@ -4708,15 +4708,15 @@
         },
         "fundamentals": {
             "beta": 0.87,
-            "pe_vs_hist_pct": -10.73,
-            "pe_hist_avg_3y": 51.51,
+            "pe_vs_hist_pct": -10.07,
+            "pe_hist_avg_3y": 51.13,
             "pe_vs_sector_pct": 81.09,
             "sector_pe_avg": 25.39,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:14"
+        "last_updated": "2026-10-14 13:15:46"
     },
     {
         "ticker": "CRM",
@@ -4732,9 +4732,9 @@
             "revenue_source": "Suscripciones de software."
         },
         "fundamental": {
-            "pe_ratio": 22.22,
-            "forward_pe": 14.85,
-            "eps": 10.71,
+            "pe_ratio": 21.78,
+            "forward_pe": 14.86,
+            "eps": 10.93,
             "forward_eps": 16.02,
             "debt_to_equity": 110.42,
             "moat": "Base instalada, ecosistema, datos, integraciones y elevados costos de migración.",
@@ -4815,7 +4815,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 54.92,
+            "rsi": 56.08,
             "ema7": 232.13,
             "ema14": 232.54,
             "ema21": 232.75,
@@ -4851,15 +4851,15 @@
         },
         "fundamentals": {
             "beta": 1.26,
-            "pe_vs_hist_pct": -12.77,
+            "pe_vs_hist_pct": -14.53,
             "pe_hist_avg_3y": 25.48,
-            "pe_vs_sector_pct": -86.87,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -87.12,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:15"
+        "last_updated": "2026-10-14 13:15:48"
     },
     {
         "ticker": "CRWD",
@@ -4958,7 +4958,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.14,
+            "rsi": 52.0,
             "ema7": 265.71,
             "ema14": 262.13,
             "ema21": 256.3,
@@ -4996,13 +4996,13 @@
             "beta": 1.2,
             "pe_vs_hist_pct": 3515.39,
             "pe_hist_avg_3y": 120.42,
-            "pe_vs_sector_pct": 2472.84,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": 2474.06,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:17"
+        "last_updated": "2026-10-14 13:15:50"
     },
     {
         "ticker": "CSCO",
@@ -5101,7 +5101,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 56.0,
+            "rsi": 55.32,
             "ema7": 114.95,
             "ema14": 113.19,
             "ema21": 112.27,
@@ -5139,13 +5139,13 @@
             "beta": 0.98,
             "pe_vs_hist_pct": 101.4,
             "pe_hist_avg_3y": 17.16,
-            "pe_vs_sector_pct": -79.58,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -79.57,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:20"
+        "last_updated": "2026-10-14 13:15:53"
     },
     {
         "ticker": "CVX",
@@ -5162,9 +5162,9 @@
         },
         "fundamental": {
             "pe_ratio": 20.96,
-            "forward_pe": 14.53,
+            "forward_pe": 14.75,
             "eps": 10.39,
-            "forward_eps": 14.99,
+            "forward_eps": 14.76,
             "debt_to_equity": 18.96,
             "moat": "Escala, reservas, integración vertical, tecnología y balance sólido.",
             "risks": "Precio de commodities, transición energética y riesgos regulatorios/geopolíticos.",
@@ -5244,7 +5244,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 68.7,
+            "rsi": 69.03,
             "ema7": 212.1,
             "ema14": 209.96,
             "ema21": 208.89,
@@ -5288,7 +5288,7 @@
             "forward_pe_vs_hist_pct": 31.14,
             "book_price_dev": 2.25
         },
-        "last_updated": "2026-10-14 12:35:22"
+        "last_updated": "2026-10-14 13:15:55"
     },
     {
         "ticker": "DE",
@@ -5331,10 +5331,10 @@
                 {
                     "date": "2026-05-21",
                     "eps_reported": 6.55,
-                    "eps_estimated": 5.7,
-                    "eps_surprise_pct": 14.91,
+                    "eps_estimated": 5.74,
+                    "eps_surprise_pct": 14.11,
                     "revenue_estimated_B": 68.77,
-                    "revenue_surprise_pct": 5.22
+                    "revenue_surprise_pct": 4.94
                 },
                 {
                     "date": "2026-02-19",
@@ -5363,10 +5363,10 @@
                 {
                     "date": "2025-05-15",
                     "eps_reported": 6.64,
-                    "eps_estimated": 5.62,
-                    "eps_surprise_pct": 18.15,
+                    "eps_estimated": 5.64,
+                    "eps_surprise_pct": 17.73,
                     "revenue_estimated_B": 69.72,
-                    "revenue_surprise_pct": 6.35
+                    "revenue_surprise_pct": 6.21
                 },
                 {
                     "date": "2025-02-13",
@@ -5387,7 +5387,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 45.54,
+            "rsi": 44.26,
             "ema7": 651.02,
             "ema14": 661.09,
             "ema21": 664.0,
@@ -5423,15 +5423,15 @@
         },
         "fundamentals": {
             "beta": 0.87,
-            "pe_vs_hist_pct": 71.66,
-            "pe_hist_avg_3y": 21.05,
+            "pe_vs_hist_pct": 71.35,
+            "pe_hist_avg_3y": 21.09,
             "pe_vs_sector_pct": -2.82,
             "sector_pe_avg": 37.18,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": 71.64,
+            "forward_pe_vs_hist_pct": 71.32,
             "book_price_dev": 6.26
         },
-        "last_updated": "2026-10-14 12:35:24"
+        "last_updated": "2026-10-14 13:15:58"
     },
     {
         "ticker": "DELL",
@@ -5530,7 +5530,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.76,
+            "rsi": 51.15,
             "ema7": 572.0,
             "ema14": 563.79,
             "ema21": 554.75,
@@ -5568,13 +5568,13 @@
             "beta": 1.44,
             "pe_vs_hist_pct": 93.46,
             "pe_hist_avg_3y": 17.2,
-            "pe_vs_sector_pct": -80.33,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -80.32,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:26"
+        "last_updated": "2026-10-14 13:16:00"
     },
     {
         "ticker": "DIS",
@@ -5673,7 +5673,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 61.54,
+            "rsi": 60.42,
             "ema7": 106.88,
             "ema14": 105.99,
             "ema21": 105.7,
@@ -5717,7 +5717,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:28"
+        "last_updated": "2026-10-14 13:16:02"
     },
     {
         "ticker": "DOW",
@@ -5734,9 +5734,9 @@
         },
         "fundamental": {
             "pe_ratio": "N/A",
-            "forward_pe": 16.77,
+            "forward_pe": 16.56,
             "eps": -1.84,
-            "forward_eps": 1.7,
+            "forward_eps": 1.72,
             "debt_to_equity": 111.91,
             "moat": "Escala, activos industriales y relaciones con clientes.",
             "risks": "Ciclo químico, precios de energía, sobrecapacidad y China.",
@@ -5816,7 +5816,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 48.48,
+            "rsi": 48.21,
             "ema7": 28.28,
             "ema14": 28.32,
             "ema21": 28.5,
@@ -5860,7 +5860,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": 1.3
         },
-        "last_updated": "2026-10-14 12:35:30"
+        "last_updated": "2026-10-14 13:16:04"
     },
     {
         "ticker": "EBAY",
@@ -5959,7 +5959,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 70.55,
+            "rsi": 70.24,
             "ema7": 112.06,
             "ema14": 110.19,
             "ema21": 109.34,
@@ -6003,7 +6003,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:32"
+        "last_updated": "2026-10-14 13:16:07"
     },
     {
         "ticker": "FCX",
@@ -6102,7 +6102,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 49.53,
+            "rsi": 46.37,
             "ema7": 72.43,
             "ema14": 72.17,
             "ema21": 72.06,
@@ -6146,7 +6146,7 @@
             "forward_pe_vs_hist_pct": 21.76,
             "book_price_dev": 5.17
         },
-        "last_updated": "2026-10-14 12:35:35"
+        "last_updated": "2026-10-14 13:16:09"
     },
     {
         "ticker": "FSLR",
@@ -6189,34 +6189,34 @@
                 {
                     "date": "2026-04-30",
                     "eps_reported": 3.22,
-                    "eps_estimated": 2.96,
-                    "eps_surprise_pct": 8.78,
+                    "eps_estimated": 2.97,
+                    "eps_surprise_pct": 8.42,
                     "revenue_estimated_B": 33.81,
-                    "revenue_surprise_pct": 3.07
+                    "revenue_surprise_pct": 2.95
                 },
                 {
                     "date": "2026-02-24",
                     "eps_reported": 4.84,
-                    "eps_estimated": 5.24,
-                    "eps_surprise_pct": -7.63,
+                    "eps_estimated": 5.17,
+                    "eps_surprise_pct": -6.38,
                     "revenue_estimated_B": 50.82,
-                    "revenue_surprise_pct": -2.67
+                    "revenue_surprise_pct": -2.23
                 },
                 {
                     "date": "2025-10-30",
                     "eps_reported": 4.24,
-                    "eps_estimated": 4.29,
-                    "eps_surprise_pct": -1.17,
+                    "eps_estimated": 4.22,
+                    "eps_surprise_pct": 0.47,
                     "revenue_estimated_B": 44.52,
-                    "revenue_surprise_pct": -0.41
+                    "revenue_surprise_pct": 0.17
                 },
                 {
                     "date": "2025-07-31",
                     "eps_reported": 3.18,
-                    "eps_estimated": 2.68,
-                    "eps_surprise_pct": 18.66,
+                    "eps_estimated": 2.62,
+                    "eps_surprise_pct": 21.37,
                     "revenue_estimated_B": 33.39,
-                    "revenue_surprise_pct": 6.53
+                    "revenue_surprise_pct": 7.48
                 },
                 {
                     "date": "2025-04-29",
@@ -6229,23 +6229,23 @@
                 {
                     "date": "2025-02-25",
                     "eps_reported": 3.65,
-                    "eps_estimated": 4.73,
-                    "eps_surprise_pct": -22.83,
+                    "eps_estimated": 4.69,
+                    "eps_surprise_pct": -22.17,
                     "revenue_estimated_B": 38.32,
-                    "revenue_surprise_pct": -7.99
+                    "revenue_surprise_pct": -7.76
                 },
                 {
                     "date": "2024-10-29",
                     "eps_reported": 2.91,
-                    "eps_estimated": 3.15,
-                    "eps_surprise_pct": -7.62,
+                    "eps_estimated": 3.16,
+                    "eps_surprise_pct": -7.91,
                     "revenue_estimated_B": 30.55,
-                    "revenue_surprise_pct": -2.67
+                    "revenue_surprise_pct": -2.77
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 46.44,
+            "rsi": 46.43,
             "ema7": 180.67,
             "ema14": 181.9,
             "ema21": 185.11,
@@ -6281,15 +6281,15 @@
         },
         "fundamentals": {
             "beta": 1.79,
-            "pe_vs_hist_pct": -42.56,
-            "pe_hist_avg_3y": 20.03,
+            "pe_vs_hist_pct": -44.63,
+            "pe_hist_avg_3y": 20.78,
             "pe_vs_sector_pct": -93.2,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:36"
+        "last_updated": "2026-10-14 13:16:11"
     },
     {
         "ticker": "GE",
@@ -6388,7 +6388,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 38.21,
+            "rsi": 36.47,
             "ema7": 308.3,
             "ema14": 311.01,
             "ema21": 314.43,
@@ -6432,7 +6432,7 @@
             "forward_pe_vs_hist_pct": -20.25,
             "book_price_dev": 18.09
         },
-        "last_updated": "2026-10-14 12:35:38"
+        "last_updated": "2026-10-14 13:16:13"
     },
     {
         "ticker": "GILD",
@@ -6531,7 +6531,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.45,
+            "rsi": 52.66,
             "ema7": 148.38,
             "ema14": 148.24,
             "ema21": 147.92,
@@ -6575,7 +6575,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:41"
+        "last_updated": "2026-10-14 13:16:16"
     },
     {
         "ticker": "GLOB",
@@ -6674,7 +6674,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 53.49,
+            "rsi": 50.53,
             "ema7": 36.35,
             "ema14": 36.16,
             "ema21": 36.28,
@@ -6712,13 +6712,13 @@
             "beta": 0.97,
             "pe_vs_hist_pct": -32.07,
             "pe_hist_avg_3y": 21.37,
-            "pe_vs_sector_pct": -91.42,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -91.41,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:43"
+        "last_updated": "2026-10-14 13:16:18"
     },
     {
         "ticker": "GOOGL",
@@ -6817,7 +6817,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 60.71,
+            "rsi": 60.54,
             "ema7": 350.25,
             "ema14": 347.95,
             "ema21": 346.8,
@@ -6861,7 +6861,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:45"
+        "last_updated": "2026-10-14 13:16:21"
     },
     {
         "ticker": "HMY",
@@ -6960,7 +6960,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 34.96,
+            "rsi": 33.95,
             "ema7": 16.76,
             "ema14": 17.15,
             "ema21": 17.51,
@@ -7004,7 +7004,7 @@
             "forward_pe_vs_hist_pct": -86.33,
             "book_price_dev": 2.3
         },
-        "last_updated": "2026-10-14 12:35:47"
+        "last_updated": "2026-10-14 13:16:23"
     },
     {
         "ticker": "IBKR",
@@ -7103,7 +7103,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 43.68,
+            "rsi": 42.23,
             "ema7": 87.8,
             "ema14": 88.2,
             "ema21": 88.67,
@@ -7141,13 +7141,13 @@
             "beta": 1.37,
             "pe_vs_hist_pct": 28.14,
             "pe_hist_avg_3y": 27.09,
-            "pe_vs_sector_pct": 73.17,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": 72.91,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 28.16,
             "book_price_dev": 6.68
         },
-        "last_updated": "2026-10-14 12:35:49"
+        "last_updated": "2026-10-14 13:16:25"
     },
     {
         "ticker": "IBM",
@@ -7246,7 +7246,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 53.68,
+            "rsi": 54.41,
             "ema7": 226.47,
             "ema14": 226.5,
             "ema21": 227.56,
@@ -7284,13 +7284,13 @@
             "beta": 0.72,
             "pe_vs_hist_pct": -2.23,
             "pe_hist_avg_3y": 20.98,
-            "pe_vs_sector_pct": -87.88,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -87.87,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:51"
+        "last_updated": "2026-10-14 13:16:27"
     },
     {
         "ticker": "INTC",
@@ -7389,7 +7389,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 39.85,
+            "rsi": 39.23,
             "ema7": 107.39,
             "ema14": 110.05,
             "ema21": 109.86,
@@ -7428,12 +7428,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:52"
+        "last_updated": "2026-10-14 13:16:29"
     },
     {
         "ticker": "IREN",
@@ -7532,7 +7532,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 31.25,
+            "rsi": 30.63,
             "ema7": 36.9,
             "ema14": 38.96,
             "ema21": 39.99,
@@ -7571,12 +7571,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 20.05,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": 3.16
         },
-        "last_updated": "2026-10-14 12:35:54"
+        "last_updated": "2026-10-14 13:16:31"
     },
     {
         "ticker": "JNJ",
@@ -7593,9 +7593,9 @@
         },
         "fundamental": {
             "pe_ratio": 28.81,
-            "forward_pe": 21.02,
+            "forward_pe": 21.04,
             "eps": 8.63,
-            "forward_eps": 11.83,
+            "forward_eps": 11.82,
             "debt_to_equity": 57.71,
             "moat": "Escala, propiedad intelectual, marcas y relaciones médicas.",
             "risks": "Litigios, patent cliffs, regulación y competencia.",
@@ -7675,7 +7675,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.37,
+            "rsi": 36.39,
             "ema7": 257.41,
             "ema14": 260.07,
             "ema21": 261.74,
@@ -7719,7 +7719,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:35:56"
+        "last_updated": "2026-10-14 13:16:34"
     },
     {
         "ticker": "JPM",
@@ -7818,7 +7818,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 34.31,
+            "rsi": 33.2,
             "ema7": 332.34,
             "ema14": 334.3,
             "ema21": 336.78,
@@ -7856,13 +7856,13 @@
             "beta": 1.01,
             "pe_vs_hist_pct": 6.17,
             "pe_hist_avg_3y": 13.09,
-            "pe_vs_sector_pct": -30.67,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -30.78,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 6.21,
             "book_price_dev": 2.51
         },
-        "last_updated": "2026-10-14 12:35:58"
+        "last_updated": "2026-10-14 13:16:36"
     },
     {
         "ticker": "KLAC",
@@ -7961,7 +7961,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 40.37,
+            "rsi": 40.89,
             "ema7": 192.56,
             "ema14": 192.47,
             "ema21": 191.2,
@@ -7999,13 +7999,13 @@
             "beta": 1.45,
             "pe_vs_hist_pct": 47.07,
             "pe_hist_avg_3y": 34.18,
-            "pe_vs_sector_pct": -70.29,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -70.28,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:00"
+        "last_updated": "2026-10-14 13:16:38"
     },
     {
         "ticker": "KMB",
@@ -8104,7 +8104,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 49.07,
+            "rsi": 48.51,
             "ema7": 97.63,
             "ema14": 97.69,
             "ema21": 98.34,
@@ -8148,7 +8148,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:01"
+        "last_updated": "2026-10-14 13:16:40"
     },
     {
         "ticker": "KO",
@@ -8165,9 +8165,9 @@
         },
         "fundamental": {
             "pe_ratio": 27.06,
-            "forward_pe": 25.56,
+            "forward_pe": 25.55,
             "eps": 3.33,
-            "forward_eps": 3.52,
+            "forward_eps": 3.53,
             "debt_to_equity": 115.52,
             "moat": "Marcas globales, distribución, escala y poder de marketing.",
             "risks": "Cambio de preferencias hacia bebidas saludables, regulación y presión de costos.",
@@ -8247,7 +8247,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 66.22,
+            "rsi": 66.65,
             "ema7": 88.31,
             "ema14": 87.79,
             "ema21": 87.67,
@@ -8291,7 +8291,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:03"
+        "last_updated": "2026-10-14 13:16:43"
     },
     {
         "ticker": "LLY",
@@ -8390,7 +8390,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.18,
+            "rsi": 52.73,
             "ema7": 1170.89,
             "ema14": 1167.57,
             "ema21": 1166.49,
@@ -8434,7 +8434,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:05"
+        "last_updated": "2026-10-14 13:16:45"
     },
     {
         "ticker": "LMT",
@@ -8485,10 +8485,10 @@
                 {
                     "date": "2026-01-29",
                     "eps_reported": 5.8,
-                    "eps_estimated": 5.75,
-                    "eps_surprise_pct": 0.87,
+                    "eps_estimated": 5.96,
+                    "eps_surprise_pct": -2.68,
                     "revenue_estimated_B": 60.9,
-                    "revenue_surprise_pct": 0.3
+                    "revenue_surprise_pct": -0.94
                 },
                 {
                     "date": "2025-10-21",
@@ -8533,7 +8533,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 40.11,
+            "rsi": 39.45,
             "ema7": 507.93,
             "ema14": 511.85,
             "ema21": 516.79,
@@ -8569,15 +8569,15 @@
         },
         "fundamentals": {
             "beta": 0.1,
-            "pe_vs_hist_pct": -9.9,
-            "pe_hist_avg_3y": 20.62,
+            "pe_vs_hist_pct": -10.33,
+            "pe_hist_avg_3y": 20.72,
             "pe_vs_sector_pct": -50.03,
             "sector_pe_avg": 37.18,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -9.9,
+            "forward_pe_vs_hist_pct": -10.34,
             "book_price_dev": 13.22
         },
-        "last_updated": "2026-10-14 12:36:07"
+        "last_updated": "2026-10-14 13:16:47"
     },
     {
         "ticker": "LRCX",
@@ -8594,9 +8594,9 @@
         },
         "fundamental": {
             "pe_ratio": 52.28,
-            "forward_pe": 25.59,
+            "forward_pe": 25.6,
             "eps": 5.76,
-            "forward_eps": 11.77,
+            "forward_eps": 11.76,
             "debt_to_equity": 33.05,
             "moat": "Tecnología especializada, relaciones con fabs y elevados costos de sustitución.",
             "risks": "Ciclo de memoria, restricciones a China y capex semiconductor.",
@@ -8676,7 +8676,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 39.74,
+            "rsi": 40.1,
             "ema7": 316.99,
             "ema14": 318.12,
             "ema21": 316.2,
@@ -8714,13 +8714,13 @@
             "beta": 1.85,
             "pe_vs_hist_pct": 52.01,
             "pe_hist_avg_3y": 34.39,
-            "pe_vs_sector_pct": -69.1,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -69.09,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:09"
+        "last_updated": "2026-10-14 13:16:49"
     },
     {
         "ticker": "MA",
@@ -8737,9 +8737,9 @@
         },
         "fundamental": {
             "pe_ratio": 33.27,
-            "forward_pe": 26.23,
+            "forward_pe": 26.26,
             "eps": 18.18,
-            "forward_eps": 23.06,
+            "forward_eps": 23.03,
             "debt_to_equity": 439.58,
             "moat": "Efectos de red globales, marca, escala y relaciones con bancos y comercios.",
             "risks": "Regulación de interchange, competencia de Visa y nuevos sistemas de pagos.",
@@ -8819,7 +8819,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 72.55,
+            "rsi": 72.01,
             "ema7": 584.1,
             "ema14": 575.79,
             "ema21": 573.07,
@@ -8857,13 +8857,13 @@
             "beta": 0.76,
             "pe_vs_hist_pct": -3.77,
             "pe_hist_avg_3y": 34.57,
-            "pe_vs_sector_pct": 65.94,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": 65.69,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -3.77,
             "book_price_dev": 94.56
         },
-        "last_updated": "2026-10-14 12:36:11"
+        "last_updated": "2026-10-14 13:16:51"
     },
     {
         "ticker": "MCD",
@@ -8962,7 +8962,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 38.52,
+            "rsi": 39.54,
             "ema7": 234.95,
             "ema14": 236.54,
             "ema21": 239.37,
@@ -9006,7 +9006,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:14"
+        "last_updated": "2026-10-14 13:16:54"
     },
     {
         "ticker": "MELI",
@@ -9023,9 +9023,9 @@
         },
         "fundamental": {
             "pe_ratio": 51.02,
-            "forward_pe": 33.35,
+            "forward_pe": 33.12,
             "eps": 36.77,
-            "forward_eps": 56.25,
+            "forward_eps": 56.65,
             "debt_to_equity": 168.59,
             "moat": "Efectos de red, logística propia, Mercado Pago, base de usuarios y ecosistema integrado.",
             "risks": "Competencia, regulación financiera, crédito y volatilidad macroeconómica latinoamericana.",
@@ -9049,42 +9049,42 @@
                 {
                     "date": "2026-05-07",
                     "eps_reported": 8.23,
-                    "eps_estimated": 8.47,
-                    "eps_surprise_pct": -2.83,
+                    "eps_estimated": 8.2,
+                    "eps_surprise_pct": 0.37,
                     "revenue_estimated_B": 86.42,
-                    "revenue_surprise_pct": -0.99
+                    "revenue_surprise_pct": 0.13
                 },
                 {
                     "date": "2026-02-24",
                     "eps_reported": 11.03,
-                    "eps_estimated": 11.43,
-                    "eps_surprise_pct": -3.5,
+                    "eps_estimated": 11.44,
+                    "eps_surprise_pct": -3.58,
                     "revenue_estimated_B": 115.81,
-                    "revenue_surprise_pct": -1.22
+                    "revenue_surprise_pct": -1.25
                 },
                 {
                     "date": "2025-10-28",
                     "eps_reported": 8.32,
-                    "eps_estimated": 9.37,
-                    "eps_surprise_pct": -11.21,
+                    "eps_estimated": 9.3,
+                    "eps_surprise_pct": -10.54,
                     "revenue_estimated_B": 87.36,
-                    "revenue_surprise_pct": -3.92
+                    "revenue_surprise_pct": -3.69
                 },
                 {
                     "date": "2025-08-04",
                     "eps_reported": 10.31,
-                    "eps_estimated": 11.75,
-                    "eps_surprise_pct": -12.26,
+                    "eps_estimated": 11.89,
+                    "eps_surprise_pct": -13.29,
                     "revenue_estimated_B": 108.26,
-                    "revenue_surprise_pct": -4.29
+                    "revenue_surprise_pct": -4.65
                 },
                 {
                     "date": "2025-05-07",
                     "eps_reported": 9.74,
-                    "eps_estimated": 7.99,
-                    "eps_surprise_pct": 21.9,
+                    "eps_estimated": 8.27,
+                    "eps_surprise_pct": 17.78,
                     "revenue_estimated_B": 102.27,
-                    "revenue_surprise_pct": 7.67
+                    "revenue_surprise_pct": 6.22
                 },
                 {
                     "date": "2025-02-20",
@@ -9105,7 +9105,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 55.9,
+            "rsi": 53.22,
             "ema7": 1857.04,
             "ema14": 1835.37,
             "ema21": 1833.38,
@@ -9149,7 +9149,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:15"
+        "last_updated": "2026-10-14 13:16:56"
     },
     {
         "ticker": "META",
@@ -9191,11 +9191,11 @@
                 },
                 {
                     "date": "2026-04-29",
-                    "eps_reported": 7.31,
-                    "eps_estimated": 6.82,
-                    "eps_surprise_pct": 7.18,
-                    "revenue_estimated_B": 76.75,
-                    "revenue_surprise_pct": 2.51
+                    "eps_reported": 10.44,
+                    "eps_estimated": 6.66,
+                    "eps_surprise_pct": 56.76,
+                    "revenue_estimated_B": 109.62,
+                    "revenue_surprise_pct": 19.86
                 },
                 {
                     "date": "2026-01-28",
@@ -9207,48 +9207,48 @@
                 },
                 {
                     "date": "2025-10-29",
-                    "eps_reported": 7.25,
-                    "eps_estimated": 6.67,
-                    "eps_surprise_pct": 8.7,
-                    "revenue_estimated_B": 76.12,
-                    "revenue_surprise_pct": 3.04
+                    "eps_reported": 1.05,
+                    "eps_estimated": 6.71,
+                    "eps_surprise_pct": -84.35,
+                    "revenue_estimated_B": 11.03,
+                    "revenue_surprise_pct": -29.52
                 },
                 {
                     "date": "2025-07-30",
                     "eps_reported": 7.14,
-                    "eps_estimated": 5.86,
-                    "eps_surprise_pct": 21.84,
+                    "eps_estimated": 5.9,
+                    "eps_surprise_pct": 21.02,
                     "revenue_estimated_B": 74.97,
-                    "revenue_surprise_pct": 7.65
+                    "revenue_surprise_pct": 7.36
                 },
                 {
                     "date": "2025-04-30",
                     "eps_reported": 6.43,
-                    "eps_estimated": 5.21,
-                    "eps_surprise_pct": 23.42,
+                    "eps_estimated": 5.22,
+                    "eps_surprise_pct": 23.18,
                     "revenue_estimated_B": 67.52,
-                    "revenue_surprise_pct": 8.2
+                    "revenue_surprise_pct": 8.11
                 },
                 {
                     "date": "2025-01-29",
                     "eps_reported": 8.02,
-                    "eps_estimated": 6.74,
-                    "eps_surprise_pct": 18.99,
+                    "eps_estimated": 6.76,
+                    "eps_surprise_pct": 18.64,
                     "revenue_estimated_B": 84.21,
-                    "revenue_surprise_pct": 6.65
+                    "revenue_surprise_pct": 6.52
                 },
                 {
                     "date": "2024-10-30",
                     "eps_reported": 6.03,
-                    "eps_estimated": 5.3,
-                    "eps_surprise_pct": 13.77,
+                    "eps_estimated": 5.29,
+                    "eps_surprise_pct": 13.99,
                     "revenue_estimated_B": 63.32,
-                    "revenue_surprise_pct": 4.82
+                    "revenue_surprise_pct": 4.9
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 63.67,
+            "rsi": 64.51,
             "ema7": 738.13,
             "ema14": 728.12,
             "ema21": 714.89,
@@ -9284,15 +9284,15 @@
         },
         "fundamentals": {
             "beta": 1.19,
-            "pe_vs_hist_pct": 10.0,
-            "pe_hist_avg_3y": 26.12,
+            "pe_vs_hist_pct": 4.68,
+            "pe_hist_avg_3y": 27.45,
             "pe_vs_sector_pct": 43.43,
             "sector_pe_avg": 20.03,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:17"
+        "last_updated": "2026-10-14 13:16:58"
     },
     {
         "ticker": "MO",
@@ -9391,7 +9391,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 66.78,
+            "rsi": 65.96,
             "ema7": 70.58,
             "ema14": 69.77,
             "ema21": 69.35,
@@ -9435,7 +9435,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:19"
+        "last_updated": "2026-10-14 13:17:00"
     },
     {
         "ticker": "MRK",
@@ -9452,9 +9452,9 @@
         },
         "fundamental": {
             "pe_ratio": 112.68,
-            "forward_pe": 15.29,
+            "forward_pe": 15.24,
             "eps": 1.26,
-            "forward_eps": 9.28,
+            "forward_eps": 9.32,
             "debt_to_equity": 128.41,
             "moat": "Propiedad intelectual, escala de I+D y liderazgo en inmuno-oncología.",
             "risks": "Patent cliff de Keytruda, competencia y pipeline.",
@@ -9534,7 +9534,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 46.24,
+            "rsi": 45.82,
             "ema7": 143.69,
             "ema14": 144.41,
             "ema21": 144.69,
@@ -9578,7 +9578,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:21"
+        "last_updated": "2026-10-14 13:17:03"
     },
     {
         "ticker": "MRVL",
@@ -9594,10 +9594,10 @@
             "revenue_source": "Data center, networking y custom silicon."
         },
         "fundamental": {
-            "pe_ratio": 88.4,
-            "forward_pe": 36.83,
-            "eps": 3.04,
-            "forward_eps": 7.3,
+            "pe_ratio": 85.31,
+            "forward_pe": 36.9,
+            "eps": 3.15,
+            "forward_eps": 7.28,
             "debt_to_equity": 28.52,
             "moat": "IP especializada y relaciones con hyperscalers.",
             "risks": "Competencia de Broadcom, NVIDIA y AMD, concentración de clientes.",
@@ -9677,7 +9677,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.94,
+            "rsi": 53.17,
             "ema7": 271.47,
             "ema14": 267.18,
             "ema21": 261.53,
@@ -9713,15 +9713,15 @@
         },
         "fundamentals": {
             "beta": 2.26,
-            "pe_vs_hist_pct": 77.75,
+            "pe_vs_hist_pct": 71.54,
             "pe_hist_avg_3y": 49.73,
-            "pe_vs_sector_pct": -47.76,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -49.56,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:23"
+        "last_updated": "2026-10-14 13:17:05"
     },
     {
         "ticker": "MS",
@@ -9780,10 +9780,10 @@
                 {
                     "date": "2025-10-15",
                     "eps_reported": 2.8,
-                    "eps_estimated": 2.11,
-                    "eps_surprise_pct": 32.7,
+                    "eps_estimated": 2.07,
+                    "eps_surprise_pct": 35.27,
                     "revenue_estimated_B": 29.4,
-                    "revenue_surprise_pct": 11.45
+                    "revenue_surprise_pct": 12.34
                 },
                 {
                     "date": "2025-07-16",
@@ -9804,10 +9804,10 @@
                 {
                     "date": "2025-01-16",
                     "eps_reported": 2.22,
-                    "eps_estimated": 1.69,
-                    "eps_surprise_pct": 31.36,
+                    "eps_estimated": 1.68,
+                    "eps_surprise_pct": 32.14,
                     "revenue_estimated_B": 23.31,
-                    "revenue_surprise_pct": 10.98
+                    "revenue_surprise_pct": 11.25
                 },
                 {
                     "date": "2024-10-16",
@@ -9820,7 +9820,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 26.87,
+            "rsi": 25.45,
             "ema7": 189.27,
             "ema14": 191.93,
             "ema21": 194.81,
@@ -9856,15 +9856,15 @@
         },
         "fundamentals": {
             "beta": 1.21,
-            "pe_vs_hist_pct": -7.15,
-            "pe_hist_avg_3y": 16.24,
-            "pe_vs_sector_pct": -24.79,
-            "sector_pe_avg": 20.05,
+            "pe_vs_hist_pct": -5.77,
+            "pe_hist_avg_3y": 16.0,
+            "pe_vs_sector_pct": -24.9,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -7.17,
+            "forward_pe_vs_hist_pct": -5.78,
             "book_price_dev": 2.75
         },
-        "last_updated": "2026-10-14 12:36:25"
+        "last_updated": "2026-10-14 13:17:07"
     },
     {
         "ticker": "MSFT",
@@ -9880,9 +9880,9 @@
             "revenue_source": "Azure y Microsoft 365 son los principales motores de crecimiento y rentabilidad."
         },
         "fundamental": {
-            "pe_ratio": 30.28,
+            "pe_ratio": 30.62,
             "forward_pe": 22.96,
-            "eps": 17.95,
+            "eps": 17.75,
             "forward_eps": 23.67,
             "debt_to_equity": 29.12,
             "moat": "Ecosistema empresarial, switching costs, Azure, distribución y posición privilegiada en software corporativo.",
@@ -9963,7 +9963,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 71.04,
+            "rsi": 70.83,
             "ema7": 532.56,
             "ema14": 523.98,
             "ema21": 517.74,
@@ -9999,15 +9999,15 @@
         },
         "fundamentals": {
             "beta": 1.1,
-            "pe_vs_hist_pct": -8.68,
+            "pe_vs_hist_pct": -7.65,
             "pe_hist_avg_3y": 33.15,
-            "pe_vs_sector_pct": -82.11,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -81.9,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:27"
+        "last_updated": "2026-10-14 13:17:09"
     },
     {
         "ticker": "MSTR",
@@ -10073,19 +10073,19 @@
                 },
                 {
                     "date": "2025-07-31",
-                    "eps_reported": 32.52,
-                    "eps_estimated": 21.48,
-                    "eps_surprise_pct": 51.4,
-                    "revenue_estimated_B": 341.46,
-                    "revenue_surprise_pct": 17.99
+                    "eps_reported": 32.6,
+                    "eps_estimated": 6.76,
+                    "eps_surprise_pct": 382.25,
+                    "revenue_estimated_B": 342.3,
+                    "revenue_surprise_pct": 133.79
                 },
                 {
                     "date": "2025-05-01",
-                    "eps_reported": -16.53,
-                    "eps_estimated": -0.02,
-                    "eps_surprise_pct": -82550.0,
-                    "revenue_estimated_B": -173.56,
-                    "revenue_surprise_pct": -28892.5
+                    "eps_reported": -16.49,
+                    "eps_estimated": -0.11,
+                    "eps_surprise_pct": -14890.91,
+                    "revenue_estimated_B": -173.14,
+                    "revenue_surprise_pct": -5211.82
                 },
                 {
                     "date": "2025-02-05",
@@ -10097,16 +10097,16 @@
                 },
                 {
                     "date": "2024-10-30",
-                    "eps_reported": -1.56,
-                    "eps_estimated": -0.02,
-                    "eps_surprise_pct": -7700.0,
-                    "revenue_estimated_B": -16.38,
-                    "revenue_surprise_pct": -2695.0
+                    "eps_reported": -1.72,
+                    "eps_estimated": -0.12,
+                    "eps_surprise_pct": -1333.33,
+                    "revenue_estimated_B": -18.06,
+                    "revenue_surprise_pct": -466.67
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 51.73,
+            "rsi": 51.24,
             "ema7": 154.58,
             "ema14": 154.24,
             "ema21": 151.39,
@@ -10145,12 +10145,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:29"
+        "last_updated": "2026-10-14 13:17:11"
     },
     {
         "ticker": "MU",
@@ -10249,7 +10249,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 38.67,
+            "rsi": 37.98,
             "ema7": 1015.92,
             "ema14": 1029.44,
             "ema21": 1026.04,
@@ -10288,12 +10288,12 @@
             "pe_vs_hist_pct": -58.76,
             "pe_hist_avg_3y": 31.1,
             "pe_vs_sector_pct": -92.42,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:31"
+        "last_updated": "2026-10-14 13:17:13"
     },
     {
         "ticker": "NEE",
@@ -10309,10 +10309,10 @@
             "revenue_source": "Florida Power & Light y NextEra Energy Resources."
         },
         "fundamental": {
-            "pe_ratio": 17.58,
-            "forward_pe": 17.89,
-            "eps": 4.45,
-            "forward_eps": 4.37,
+            "pe_ratio": 17.82,
+            "forward_pe": 17.87,
+            "eps": 4.39,
+            "forward_eps": 4.38,
             "debt_to_equity": 161.68,
             "moat": "Escala, regulación, activos de generación y capacidad de desarrollar renovables.",
             "risks": "Tasas de interés, regulación y necesidades de capital.",
@@ -10392,7 +10392,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 48.02,
+            "rsi": 46.51,
             "ema7": 77.66,
             "ema14": 77.73,
             "ema21": 78.28,
@@ -10428,15 +10428,15 @@
         },
         "fundamentals": {
             "beta": 0.64,
-            "pe_vs_hist_pct": -15.16,
+            "pe_vs_hist_pct": -14.0,
             "pe_hist_avg_3y": 20.72,
-            "pe_vs_sector_pct": -28.59,
-            "sector_pe_avg": 24.62,
+            "pe_vs_sector_pct": -27.85,
+            "sector_pe_avg": 24.7,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -15.17,
+            "forward_pe_vs_hist_pct": -14.01,
             "book_price_dev": 2.86
         },
-        "last_updated": "2026-10-14 12:36:35"
+        "last_updated": "2026-10-14 13:17:17"
     },
     {
         "ticker": "NEM",
@@ -10535,7 +10535,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 40.07,
+            "rsi": 39.28,
             "ema7": 116.33,
             "ema14": 117.4,
             "ema21": 118.33,
@@ -10579,7 +10579,7 @@
             "forward_pe_vs_hist_pct": -17.97,
             "book_price_dev": 3.47
         },
-        "last_updated": "2026-10-14 12:36:36"
+        "last_updated": "2026-10-14 13:17:19"
     },
     {
         "ticker": "NFLX",
@@ -10622,10 +10622,10 @@
                 {
                     "date": "2026-04-16",
                     "eps_reported": 1.23,
-                    "eps_estimated": 1.32,
-                    "eps_surprise_pct": -6.82,
+                    "eps_estimated": 1.25,
+                    "eps_surprise_pct": -1.6,
                     "revenue_estimated_B": 12.91,
-                    "revenue_surprise_pct": -2.39
+                    "revenue_surprise_pct": -0.56
                 },
                 {
                     "date": "2026-01-20",
@@ -10646,10 +10646,10 @@
                 {
                     "date": "2025-07-17",
                     "eps_reported": 0.72,
-                    "eps_estimated": 0.71,
-                    "eps_surprise_pct": 1.41,
+                    "eps_estimated": 0.7,
+                    "eps_surprise_pct": 2.86,
                     "revenue_estimated_B": 7.56,
-                    "revenue_surprise_pct": 0.49
+                    "revenue_surprise_pct": 1.0
                 },
                 {
                     "date": "2025-04-17",
@@ -10678,7 +10678,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 45.83,
+            "rsi": 46.85,
             "ema7": 70.15,
             "ema14": 70.58,
             "ema21": 71.44,
@@ -10722,7 +10722,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:38"
+        "last_updated": "2026-10-14 13:17:21"
     },
     {
         "ticker": "NIO",
@@ -10821,7 +10821,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 42.94,
+            "rsi": 42.53,
             "ema7": 3.51,
             "ema14": 3.53,
             "ema21": 3.59,
@@ -10865,7 +10865,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:40"
+        "last_updated": "2026-10-14 13:17:23"
     },
     {
         "ticker": "NKE",
@@ -10924,10 +10924,10 @@
                 {
                     "date": "2025-12-18",
                     "eps_reported": 0.53,
-                    "eps_estimated": 0.38,
-                    "eps_surprise_pct": 39.47,
+                    "eps_estimated": 0.37,
+                    "eps_surprise_pct": 43.24,
                     "revenue_estimated_B": 5.57,
-                    "revenue_surprise_pct": 13.82
+                    "revenue_surprise_pct": 15.14
                 },
                 {
                     "date": "2025-09-30",
@@ -10948,10 +10948,10 @@
                 {
                     "date": "2025-03-20",
                     "eps_reported": 0.54,
-                    "eps_estimated": 0.29,
-                    "eps_surprise_pct": 86.21,
+                    "eps_estimated": 0.28,
+                    "eps_surprise_pct": 92.86,
                     "revenue_estimated_B": 5.67,
-                    "revenue_surprise_pct": 30.17
+                    "revenue_surprise_pct": 32.5
                 },
                 {
                     "date": "2024-12-19",
@@ -10964,7 +10964,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 44.38,
+            "rsi": 44.67,
             "ema7": 34.99,
             "ema14": 35.21,
             "ema21": 35.61,
@@ -11000,15 +11000,15 @@
         },
         "fundamentals": {
             "beta": 1.1,
-            "pe_vs_hist_pct": -33.61,
-            "pe_hist_avg_3y": 25.58,
+            "pe_vs_hist_pct": -34.68,
+            "pe_hist_avg_3y": 26.0,
             "pe_vs_sector_pct": -76.53,
             "sector_pe_avg": 72.39,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:42"
+        "last_updated": "2026-10-14 13:17:25"
     },
     {
         "ticker": "NOK",
@@ -11107,7 +11107,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 43.09,
+            "rsi": 42.76,
             "ema7": 10.18,
             "ema14": 10.29,
             "ema21": 10.32,
@@ -11145,13 +11145,13 @@
             "beta": 0.73,
             "pe_vs_hist_pct": 329.57,
             "pe_hist_avg_3y": 16.4,
-            "pe_vs_sector_pct": -58.38,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -58.36,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:44"
+        "last_updated": "2026-10-14 13:17:28"
     },
     {
         "ticker": "NOW",
@@ -11167,9 +11167,9 @@
             "revenue_source": "Suscripciones de software."
         },
         "fundamental": {
-            "pe_ratio": 86.63,
-            "forward_pe": 27.66,
-            "eps": 1.6,
+            "pe_ratio": 86.09,
+            "forward_pe": 27.69,
+            "eps": 1.61,
             "forward_eps": 5.01,
             "debt_to_equity": 67.54,
             "moat": "Plataforma integrada, switching costs, ecosistema y posición en workflows empresariales.",
@@ -11250,7 +11250,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 54.54,
+            "rsi": 55.03,
             "ema7": 138.68,
             "ema14": 137.75,
             "ema21": 136.95,
@@ -11286,15 +11286,15 @@
         },
         "fundamentals": {
             "beta": 0.99,
-            "pe_vs_hist_pct": 51.14,
+            "pe_vs_hist_pct": 50.21,
             "pe_hist_avg_3y": 57.32,
-            "pe_vs_sector_pct": -48.8,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -49.1,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:46"
+        "last_updated": "2026-10-14 13:17:30"
     },
     {
         "ticker": "NU",
@@ -11336,27 +11336,27 @@
                 },
                 {
                     "date": "2026-05-14",
-                    "eps_reported": 0.18,
-                    "eps_estimated": 0.19,
-                    "eps_surprise_pct": -5.26,
-                    "revenue_estimated_B": 1.89,
-                    "revenue_surprise_pct": -1.84
+                    "eps_reported": 0.19,
+                    "eps_estimated": 0.21,
+                    "eps_surprise_pct": -9.52,
+                    "revenue_estimated_B": 2.0,
+                    "revenue_surprise_pct": -3.33
                 },
                 {
                     "date": "2026-02-25",
-                    "eps_reported": 0.18,
-                    "eps_estimated": 0.18,
-                    "eps_surprise_pct": 0.0,
-                    "revenue_estimated_B": 1.89,
-                    "revenue_surprise_pct": 0.0
+                    "eps_reported": 0.19,
+                    "eps_estimated": 0.2,
+                    "eps_surprise_pct": -5.0,
+                    "revenue_estimated_B": 2.0,
+                    "revenue_surprise_pct": -1.75
                 },
                 {
                     "date": "2025-11-13",
-                    "eps_reported": 0.17,
-                    "eps_estimated": 0.17,
-                    "eps_surprise_pct": 0.0,
-                    "revenue_estimated_B": 1.79,
-                    "revenue_surprise_pct": 0.0
+                    "eps_reported": 0.16,
+                    "eps_estimated": 0.15,
+                    "eps_surprise_pct": 6.67,
+                    "revenue_estimated_B": 1.68,
+                    "revenue_surprise_pct": 2.33
                 },
                 {
                     "date": "2025-08-14",
@@ -11368,32 +11368,32 @@
                 },
                 {
                     "date": "2025-05-13",
-                    "eps_reported": 0.11,
-                    "eps_estimated": 0.12,
-                    "eps_surprise_pct": -8.33,
-                    "revenue_estimated_B": 1.16,
-                    "revenue_surprise_pct": -2.92
+                    "eps_reported": 0.12,
+                    "eps_estimated": 0.13,
+                    "eps_surprise_pct": -7.69,
+                    "revenue_estimated_B": 1.26,
+                    "revenue_surprise_pct": -2.69
                 },
                 {
                     "date": "2025-02-20",
-                    "eps_reported": 0.11,
-                    "eps_estimated": 0.11,
-                    "eps_surprise_pct": 0.0,
-                    "revenue_estimated_B": 1.16,
-                    "revenue_surprise_pct": 0.0
+                    "eps_reported": 0.13,
+                    "eps_estimated": 0.12,
+                    "eps_surprise_pct": 8.33,
+                    "revenue_estimated_B": 1.36,
+                    "revenue_surprise_pct": 2.92
                 },
                 {
                     "date": "2024-11-13",
-                    "eps_reported": 0.11,
-                    "eps_estimated": 0.1,
-                    "eps_surprise_pct": 10.0,
-                    "revenue_estimated_B": 1.16,
-                    "revenue_surprise_pct": 3.5
+                    "eps_reported": 0.12,
+                    "eps_estimated": 0.11,
+                    "eps_surprise_pct": 9.09,
+                    "revenue_estimated_B": 1.26,
+                    "revenue_surprise_pct": 3.18
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 56.74,
+            "rsi": 55.92,
             "ema7": 15.38,
             "ema14": 14.87,
             "ema21": 14.66,
@@ -11429,15 +11429,15 @@
         },
         "fundamentals": {
             "beta": 0.95,
-            "pe_vs_hist_pct": -48.25,
-            "pe_hist_avg_3y": 41.24,
-            "pe_vs_sector_pct": 6.43,
-            "sector_pe_avg": 20.05,
+            "pe_vs_hist_pct": -35.46,
+            "pe_hist_avg_3y": 33.07,
+            "pe_vs_sector_pct": 6.27,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -48.25,
+            "forward_pe_vs_hist_pct": -35.46,
             "book_price_dev": 5.68
         },
-        "last_updated": "2026-10-14 12:36:48"
+        "last_updated": "2026-10-14 13:17:33"
     },
     {
         "ticker": "NVDA",
@@ -11536,7 +11536,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 49.26,
+            "rsi": 48.78,
             "ema7": 230.31,
             "ema14": 229.7,
             "ema21": 228.22,
@@ -11574,13 +11574,13 @@
             "beta": 2.22,
             "pe_vs_hist_pct": -45.14,
             "pe_hist_avg_3y": 52.66,
-            "pe_vs_sector_pct": -82.93,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -82.92,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:50"
+        "last_updated": "2026-10-14 13:17:35"
     },
     {
         "ticker": "OKLO",
@@ -11623,10 +11623,10 @@
                 {
                     "date": "2026-03-17",
                     "eps_reported": -0.27,
-                    "eps_estimated": -0.17,
-                    "eps_surprise_pct": -58.82,
+                    "eps_estimated": -0.16,
+                    "eps_surprise_pct": -68.75,
                     "revenue_estimated_B": -2.83,
-                    "revenue_surprise_pct": -20.59
+                    "revenue_surprise_pct": -24.06
                 },
                 {
                     "date": "2025-11-11",
@@ -11679,7 +11679,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 31.96,
+            "rsi": 31.46,
             "ema7": 34.24,
             "ema14": 35.61,
             "ema21": 36.53,
@@ -11718,12 +11718,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 24.62,
+            "sector_pe_avg": 24.7,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": 1.8
         },
-        "last_updated": "2026-10-14 12:36:52"
+        "last_updated": "2026-10-14 13:17:37"
     },
     {
         "ticker": "ORCL",
@@ -11822,7 +11822,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 47.81,
+            "rsi": 46.93,
             "ema7": 140.49,
             "ema14": 140.96,
             "ema21": 141.75,
@@ -11861,12 +11861,12 @@
             "pe_vs_hist_pct": -14.49,
             "pe_hist_avg_3y": 26.25,
             "pe_vs_sector_pct": -86.73,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:54"
+        "last_updated": "2026-10-14 13:17:39"
     },
     {
         "ticker": "PAAS",
@@ -11965,7 +11965,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 38.38,
+            "rsi": 36.73,
             "ema7": 45.41,
             "ema14": 46.07,
             "ema21": 46.71,
@@ -12009,7 +12009,7 @@
             "forward_pe_vs_hist_pct": -80.35,
             "book_price_dev": 2.52
         },
-        "last_updated": "2026-10-14 12:36:56"
+        "last_updated": "2026-10-14 13:17:42"
     },
     {
         "ticker": "PAGS",
@@ -12108,7 +12108,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 67.08,
+            "rsi": 63.19,
             "ema7": 10.69,
             "ema14": 10.24,
             "ema21": 9.98,
@@ -12146,13 +12146,13 @@
             "beta": 1.24,
             "pe_vs_hist_pct": 448.72,
             "pe_hist_avg_3y": 1.41,
-            "pe_vs_sector_pct": -95.43,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -95.42,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:36:58"
+        "last_updated": "2026-10-14 13:17:44"
     },
     {
         "ticker": "PBR",
@@ -12251,7 +12251,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 78.87,
+            "rsi": 79.29,
             "ema7": 24.49,
             "ema14": 23.39,
             "ema21": 22.65,
@@ -12293,9 +12293,9 @@
             "sector_pe_avg": 14.16,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 51.16,
-            "book_price_dev": 1.7
+            "book_price_dev": 1.79
         },
-        "last_updated": "2026-10-14 12:37:00"
+        "last_updated": "2026-10-14 13:17:46"
     },
     {
         "ticker": "PEP",
@@ -12394,7 +12394,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 43.37,
+            "rsi": 44.37,
             "ema7": 126.69,
             "ema14": 127.57,
             "ema21": 128.84,
@@ -12438,7 +12438,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:02"
+        "last_updated": "2026-10-14 13:17:48"
     },
     {
         "ticker": "PFE",
@@ -12455,9 +12455,9 @@
         },
         "fundamental": {
             "pe_ratio": 37.33,
-            "forward_pe": 9.83,
+            "forward_pe": 9.77,
             "eps": 0.76,
-            "forward_eps": 2.89,
+            "forward_eps": 2.9,
             "debt_to_equity": 74.25,
             "moat": "Escala de I+D, propiedad intelectual y distribución global.",
             "risks": "Patent cliffs, caída de ingresos COVID, presión de precios y pipeline.",
@@ -12537,7 +12537,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 59.2,
+            "rsi": 58.67,
             "ema7": 28.16,
             "ema14": 28.1,
             "ema21": 28.04,
@@ -12581,7 +12581,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:04"
+        "last_updated": "2026-10-14 13:17:51"
     },
     {
         "ticker": "PG",
@@ -12680,7 +12680,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 68.11,
+            "rsi": 68.62,
             "ema7": 150.59,
             "ema14": 149.02,
             "ema21": 148.23,
@@ -12724,7 +12724,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:06"
+        "last_updated": "2026-10-14 13:17:53"
     },
     {
         "ticker": "PLTR",
@@ -12741,9 +12741,9 @@
         },
         "fundamental": {
             "pe_ratio": 179.89,
-            "forward_pe": 88.74,
+            "forward_pe": 89.02,
             "eps": 1.16,
-            "forward_eps": 2.35,
+            "forward_eps": 2.34,
             "debt_to_equity": 2.14,
             "moat": "Tecnología altamente integrada, switching costs, conocimiento institucional y fuerte capacidad de implementación.",
             "risks": "Valuación elevada, concentración gubernamental y competencia en IA empresarial.",
@@ -12823,7 +12823,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 73.14,
+            "rsi": 73.27,
             "ema7": 201.96,
             "ema14": 195.92,
             "ema21": 191.65,
@@ -12861,13 +12861,13 @@
             "beta": 1.6,
             "pe_vs_hist_pct": -2.81,
             "pe_hist_avg_3y": 185.08,
-            "pe_vs_sector_pct": 6.31,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": 6.36,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:08"
+        "last_updated": "2026-10-14 13:17:55"
     },
     {
         "ticker": "PYPL",
@@ -12884,9 +12884,9 @@
         },
         "fundamental": {
             "pe_ratio": 10.62,
-            "forward_pe": 9.73,
+            "forward_pe": 9.71,
             "eps": 5.29,
-            "forward_eps": 5.78,
+            "forward_eps": 5.79,
             "debt_to_equity": 71.75,
             "moat": "Base de usuarios, aceptación comercial y reconocimiento de marca.",
             "risks": "Competencia de Apple Pay, Stripe, Adyen y wallets; presión sobre take rates.",
@@ -12966,7 +12966,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 57.63,
+            "rsi": 56.81,
             "ema7": 55.27,
             "ema14": 54.7,
             "ema21": 54.6,
@@ -13004,13 +13004,13 @@
             "beta": 1.28,
             "pe_vs_hist_pct": -15.09,
             "pe_hist_avg_3y": 12.5,
-            "pe_vs_sector_pct": -47.03,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": -47.11,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": -15.05,
             "book_price_dev": 2.44
         },
-        "last_updated": "2026-10-14 12:37:10"
+        "last_updated": "2026-10-14 13:17:57"
     },
     {
         "ticker": "QCOM",
@@ -13109,7 +13109,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 44.33,
+            "rsi": 43.62,
             "ema7": 177.85,
             "ema14": 180.22,
             "ema21": 180.44,
@@ -13148,12 +13148,12 @@
             "pe_vs_hist_pct": 34.4,
             "pe_hist_avg_3y": 15.23,
             "pe_vs_sector_pct": -87.9,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:12"
+        "last_updated": "2026-10-14 13:17:59"
     },
     {
         "ticker": "RIO",
@@ -13252,7 +13252,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.75,
+            "rsi": 36.42,
             "ema7": 94.03,
             "ema14": 94.69,
             "ema21": 95.41,
@@ -13296,7 +13296,7 @@
             "forward_pe_vs_hist_pct": 0.88,
             "book_price_dev": 2.31
         },
-        "last_updated": "2026-10-14 12:37:14"
+        "last_updated": "2026-10-14 13:18:02"
     },
     {
         "ticker": "RKLB",
@@ -13338,35 +13338,35 @@
                 },
                 {
                     "date": "2026-05-07",
-                    "eps_reported": -0.02,
-                    "eps_estimated": -0.04,
-                    "eps_surprise_pct": 50.0,
-                    "revenue_estimated_B": -0.21,
-                    "revenue_surprise_pct": 17.5
+                    "eps_reported": -0.07,
+                    "eps_estimated": -0.08,
+                    "eps_surprise_pct": 12.5,
+                    "revenue_estimated_B": -0.74,
+                    "revenue_surprise_pct": 4.37
                 },
                 {
                     "date": "2026-02-26",
-                    "eps_reported": -0.05,
-                    "eps_estimated": -0.05,
-                    "eps_surprise_pct": 0.0,
-                    "revenue_estimated_B": -0.53,
-                    "revenue_surprise_pct": 0.0
+                    "eps_reported": -0.09,
+                    "eps_estimated": -0.1,
+                    "eps_surprise_pct": 10.0,
+                    "revenue_estimated_B": -0.94,
+                    "revenue_surprise_pct": 3.5
                 },
                 {
                     "date": "2025-11-10",
-                    "eps_reported": -0.02,
-                    "eps_estimated": -0.06,
-                    "eps_surprise_pct": 66.67,
-                    "revenue_estimated_B": -0.21,
-                    "revenue_surprise_pct": 23.33
+                    "eps_reported": -0.03,
+                    "eps_estimated": -0.1,
+                    "eps_surprise_pct": 70.0,
+                    "revenue_estimated_B": -0.32,
+                    "revenue_surprise_pct": 24.5
                 },
                 {
                     "date": "2025-08-07",
-                    "eps_reported": -0.08,
-                    "eps_estimated": -0.08,
-                    "eps_surprise_pct": 0.0,
-                    "revenue_estimated_B": -0.84,
-                    "revenue_surprise_pct": 0.0
+                    "eps_reported": -0.13,
+                    "eps_estimated": -0.11,
+                    "eps_surprise_pct": -18.18,
+                    "revenue_estimated_B": -1.36,
+                    "revenue_surprise_pct": -6.36
                 },
                 {
                     "date": "2025-05-08",
@@ -13378,24 +13378,24 @@
                 },
                 {
                     "date": "2025-02-27",
-                    "eps_reported": -0.06,
-                    "eps_estimated": -0.07,
-                    "eps_surprise_pct": 14.29,
-                    "revenue_estimated_B": -0.63,
-                    "revenue_surprise_pct": 5.0
+                    "eps_reported": -0.1,
+                    "eps_estimated": -0.1,
+                    "eps_surprise_pct": 0.0,
+                    "revenue_estimated_B": -1.05,
+                    "revenue_surprise_pct": 0.0
                 },
                 {
                     "date": "2024-11-12",
-                    "eps_reported": -0.07,
-                    "eps_estimated": -0.08,
-                    "eps_surprise_pct": 12.5,
-                    "revenue_estimated_B": -0.74,
-                    "revenue_surprise_pct": 4.37
+                    "eps_reported": -0.1,
+                    "eps_estimated": -0.11,
+                    "eps_surprise_pct": 9.09,
+                    "revenue_estimated_B": -1.05,
+                    "revenue_surprise_pct": 3.18
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 38.02,
+            "rsi": 37.68,
             "ema7": 68.09,
             "ema14": 69.09,
             "ema21": 69.21,
@@ -13439,7 +13439,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": 11.0
         },
-        "last_updated": "2026-10-14 12:37:15"
+        "last_updated": "2026-10-14 13:18:04"
     },
     {
         "ticker": "RTX",
@@ -13538,7 +13538,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 33.65,
+            "rsi": 33.74,
             "ema7": 184.65,
             "ema14": 186.39,
             "ema21": 188.76,
@@ -13582,7 +13582,7 @@
             "forward_pe_vs_hist_pct": 36.59,
             "book_price_dev": 3.72
         },
-        "last_updated": "2026-10-14 12:37:17"
+        "last_updated": "2026-10-14 13:18:06"
     },
     {
         "ticker": "SCCO",
@@ -13599,9 +13599,9 @@
         },
         "fundamental": {
             "pe_ratio": 30.96,
-            "forward_pe": 27.44,
+            "forward_pe": 27.58,
             "eps": 6.7,
-            "forward_eps": 7.56,
+            "forward_eps": 7.52,
             "debt_to_equity": 67.86,
             "moat": "Reservas, bajos costos y activos mineros de larga vida.",
             "risks": "Precio del cobre, permisos, política latinoamericana y costos.",
@@ -13681,7 +13681,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 53.34,
+            "rsi": 50.68,
             "ema7": 205.48,
             "ema14": 203.88,
             "ema21": 202.84,
@@ -13725,7 +13725,7 @@
             "forward_pe_vs_hist_pct": 12.17,
             "book_price_dev": 14.12
         },
-        "last_updated": "2026-10-14 12:37:19"
+        "last_updated": "2026-10-14 13:18:08"
     },
     {
         "ticker": "SHEL",
@@ -13742,9 +13742,9 @@
         },
         "fundamental": {
             "pe_ratio": 11.37,
-            "forward_pe": 9.77,
+            "forward_pe": 9.82,
             "eps": 9.06,
-            "forward_eps": 10.54,
+            "forward_eps": 10.48,
             "debt_to_equity": 40.2,
             "moat": "Escala global, LNG, trading, infraestructura y diversificación.",
             "risks": "Precios energéticos, transición energética y regulación.",
@@ -13824,7 +13824,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 76.22,
+            "rsi": 75.73,
             "ema7": 99.96,
             "ema14": 98.32,
             "ema21": 97.29,
@@ -13868,7 +13868,7 @@
             "forward_pe_vs_hist_pct": 21.32,
             "book_price_dev": 1.59
         },
-        "last_updated": "2026-10-14 12:37:23"
+        "last_updated": "2026-10-14 13:18:10"
     },
     {
         "ticker": "SNOW",
@@ -13900,6 +13900,14 @@
                 "MSFT"
             ],
             "quarterly_history": [
+                {
+                    "date": "2026-09-02",
+                    "eps_reported": 0.62,
+                    "eps_estimated": 0.45,
+                    "eps_surprise_pct": 37.78,
+                    "revenue_estimated_B": 6.51,
+                    "revenue_surprise_pct": 13.22
+                },
                 {
                     "date": "2026-05-27",
                     "eps_reported": 0.39,
@@ -13955,19 +13963,11 @@
                     "eps_surprise_pct": 33.33,
                     "revenue_estimated_B": 2.1,
                     "revenue_surprise_pct": 11.67
-                },
-                {
-                    "date": "2024-08-21",
-                    "eps_reported": 0.18,
-                    "eps_estimated": 0.16,
-                    "eps_surprise_pct": 12.5,
-                    "revenue_estimated_B": 1.89,
-                    "revenue_surprise_pct": 4.37
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 57.78,
+            "rsi": 56.73,
             "ema7": 351.48,
             "ema14": 345.31,
             "ema21": 341.45,
@@ -14006,12 +14006,12 @@
             "pe_vs_hist_pct": "N/A",
             "pe_hist_avg_3y": "N/A",
             "pe_vs_sector_pct": "N/A",
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:26"
+        "last_updated": "2026-10-14 13:18:13"
     },
     {
         "ticker": "SPOT",
@@ -14070,10 +14070,10 @@
                 {
                     "date": "2025-11-04",
                     "eps_reported": 3.28,
-                    "eps_estimated": 2.02,
-                    "eps_surprise_pct": 62.38,
+                    "eps_estimated": 2.13,
+                    "eps_surprise_pct": 53.99,
                     "revenue_estimated_B": 34.44,
-                    "revenue_surprise_pct": 21.83
+                    "revenue_surprise_pct": 18.9
                 },
                 {
                     "date": "2025-07-29",
@@ -14110,7 +14110,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 58.41,
+            "rsi": 56.33,
             "ema7": 517.72,
             "ema14": 512.96,
             "ema21": 513.3,
@@ -14154,7 +14154,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:28"
+        "last_updated": "2026-10-14 13:18:17"
     },
     {
         "ticker": "STNE",
@@ -14253,7 +14253,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 65.85,
+            "rsi": 62.66,
             "ema7": 11.6,
             "ema14": 11.02,
             "ema21": 10.71,
@@ -14292,12 +14292,12 @@
             "pe_vs_hist_pct": 153.71,
             "pe_hist_avg_3y": 1.8,
             "pe_vs_sector_pct": -97.29,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:30"
+        "last_updated": "2026-10-14 13:18:19"
     },
     {
         "ticker": "T",
@@ -14396,7 +14396,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.13,
+            "rsi": 36.61,
             "ema7": 23.31,
             "ema14": 23.82,
             "ema21": 24.11,
@@ -14440,7 +14440,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:32"
+        "last_updated": "2026-10-14 13:18:21"
     },
     {
         "ticker": "TGT",
@@ -14539,7 +14539,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 42.33,
+            "rsi": 43.63,
             "ema7": 153.56,
             "ema14": 154.65,
             "ema21": 155.31,
@@ -14583,7 +14583,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:34"
+        "last_updated": "2026-10-14 13:18:23"
     },
     {
         "ticker": "TSLA",
@@ -14682,7 +14682,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 52.25,
+            "rsi": 52.48,
             "ema7": 375.82,
             "ema14": 372.77,
             "ema21": 370.2,
@@ -14726,7 +14726,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:37"
+        "last_updated": "2026-10-14 13:18:27"
     },
     {
         "ticker": "TSM",
@@ -14825,7 +14825,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 45.41,
+            "rsi": 44.81,
             "ema7": 455.34,
             "ema14": 455.22,
             "ema21": 451.45,
@@ -14863,13 +14863,13 @@
             "beta": 1.24,
             "pe_vs_hist_pct": 13.71,
             "pe_hist_avg_3y": 28.45,
-            "pe_vs_sector_pct": -80.88,
-            "sector_pe_avg": 169.21,
+            "pe_vs_sector_pct": -80.87,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:39"
+        "last_updated": "2026-10-14 13:18:29"
     },
     {
         "ticker": "TXN",
@@ -14944,10 +14944,10 @@
                 {
                     "date": "2025-04-23",
                     "eps_reported": 1.28,
-                    "eps_estimated": 1.1,
-                    "eps_surprise_pct": 16.36,
+                    "eps_estimated": 1.06,
+                    "eps_surprise_pct": 20.75,
                     "revenue_estimated_B": 13.44,
-                    "revenue_surprise_pct": 5.73
+                    "revenue_surprise_pct": 7.26
                 },
                 {
                     "date": "2025-01-23",
@@ -14968,7 +14968,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 55.22,
+            "rsi": 54.89,
             "ema7": 286.29,
             "ema14": 283.53,
             "ema21": 280.63,
@@ -15004,15 +15004,15 @@
         },
         "fundamentals": {
             "beta": 1.34,
-            "pe_vs_hist_pct": 31.46,
-            "pe_hist_avg_3y": 33.33,
-            "pe_vs_sector_pct": -74.11,
-            "sector_pe_avg": 169.21,
+            "pe_vs_hist_pct": 32.02,
+            "pe_hist_avg_3y": 33.19,
+            "pe_vs_sector_pct": -74.1,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:41"
+        "last_updated": "2026-10-14 13:18:31"
     },
     {
         "ticker": "UBER",
@@ -15078,19 +15078,19 @@
                 },
                 {
                     "date": "2025-08-06",
-                    "eps_reported": 0.65,
-                    "eps_estimated": 0.82,
-                    "eps_surprise_pct": -20.73,
-                    "revenue_estimated_B": 6.83,
-                    "revenue_surprise_pct": -7.26
+                    "eps_reported": 0.63,
+                    "eps_estimated": 0.62,
+                    "eps_surprise_pct": 1.61,
+                    "revenue_estimated_B": 6.62,
+                    "revenue_surprise_pct": 0.56
                 },
                 {
                     "date": "2025-05-07",
-                    "eps_reported": 0.81,
-                    "eps_estimated": 0.69,
-                    "eps_surprise_pct": 17.39,
-                    "revenue_estimated_B": 8.51,
-                    "revenue_surprise_pct": 6.09
+                    "eps_reported": 0.83,
+                    "eps_estimated": 0.5,
+                    "eps_surprise_pct": 66.0,
+                    "revenue_estimated_B": 8.71,
+                    "revenue_surprise_pct": 23.1
                 },
                 {
                     "date": "2025-02-05",
@@ -15102,16 +15102,16 @@
                 },
                 {
                     "date": "2024-10-31",
-                    "eps_reported": 1.41,
-                    "eps_estimated": 0.63,
-                    "eps_surprise_pct": 123.81,
-                    "revenue_estimated_B": 14.8,
-                    "revenue_surprise_pct": 43.33
+                    "eps_reported": 1.2,
+                    "eps_estimated": 0.4,
+                    "eps_surprise_pct": 200.0,
+                    "revenue_estimated_B": 12.6,
+                    "revenue_surprise_pct": 70.0
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 49.91,
+            "rsi": 50.42,
             "ema7": 70.48,
             "ema14": 70.23,
             "ema21": 70.53,
@@ -15147,15 +15147,15 @@
         },
         "fundamentals": {
             "beta": 1.26,
-            "pe_vs_hist_pct": -37.41,
-            "pe_hist_avg_3y": 24.99,
-            "pe_vs_sector_pct": -90.76,
-            "sector_pe_avg": 169.21,
+            "pe_vs_hist_pct": -65.75,
+            "pe_hist_avg_3y": 45.67,
+            "pe_vs_sector_pct": -90.75,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:43"
+        "last_updated": "2026-10-14 13:18:33"
     },
     {
         "ticker": "UNH",
@@ -15172,9 +15172,9 @@
         },
         "fundamental": {
             "pe_ratio": 24.29,
-            "forward_pe": 16.38,
+            "forward_pe": 16.36,
             "eps": 15.55,
-            "forward_eps": 23.06,
+            "forward_eps": 23.1,
             "debt_to_equity": 70.43,
             "moat": "Escala, integración vertical, datos y relaciones con proveedores.",
             "risks": "Regulación, costos médicos, Medicare y escrutinio político.",
@@ -15254,7 +15254,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 48.78,
+            "rsi": 50.32,
             "ema7": 376.4,
             "ema14": 376.2,
             "ema21": 377.56,
@@ -15298,7 +15298,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:45"
+        "last_updated": "2026-10-14 13:18:35"
     },
     {
         "ticker": "V",
@@ -15397,7 +15397,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 74.14,
+            "rsi": 74.46,
             "ema7": 382.09,
             "ema14": 376.18,
             "ema21": 373.91,
@@ -15435,13 +15435,13 @@
             "beta": 0.77,
             "pe_vs_hist_pct": 14.27,
             "pe_hist_avg_3y": 29.5,
-            "pe_vs_sector_pct": 68.13,
-            "sector_pe_avg": 20.05,
+            "pe_vs_sector_pct": 67.88,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
             "forward_pe_vs_hist_pct": 14.26,
             "book_price_dev": 20.99
         },
-        "last_updated": "2026-10-14 12:37:47"
+        "last_updated": "2026-10-14 13:18:37"
     },
     {
         "ticker": "VALE",
@@ -15540,7 +15540,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 37.36,
+            "rsi": 36.07,
             "ema7": 13.57,
             "ema14": 13.71,
             "ema21": 13.86,
@@ -15584,7 +15584,7 @@
             "forward_pe_vs_hist_pct": 329.9,
             "book_price_dev": 1.44
         },
-        "last_updated": "2026-10-14 12:37:48"
+        "last_updated": "2026-10-14 13:18:40"
     },
     {
         "ticker": "VIST",
@@ -15601,9 +15601,9 @@
         },
         "fundamental": {
             "pe_ratio": 9.13,
-            "forward_pe": 6.67,
+            "forward_pe": 6.89,
             "eps": 7.56,
-            "forward_eps": 10.34,
+            "forward_eps": 10.02,
             "debt_to_equity": 106.5,
             "moat": "Posición de bajo costo en Vaca Muerta y amplio inventario de recursos.",
             "risks": "Riesgo país argentino, infraestructura, regulación y precio del petróleo.",
@@ -15683,7 +15683,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 51.09,
+            "rsi": 51.5,
             "ema7": 67.58,
             "ema14": 67.79,
             "ema21": 68.36,
@@ -15727,7 +15727,7 @@
             "forward_pe_vs_hist_pct": 1041.2,
             "book_price_dev": 2.31
         },
-        "last_updated": "2026-10-14 12:37:50"
+        "last_updated": "2026-10-14 13:18:42"
     },
     {
         "ticker": "VST",
@@ -15762,10 +15762,10 @@
                 {
                     "date": "2026-08-10",
                     "eps_reported": 0.76,
-                    "eps_estimated": 1.63,
-                    "eps_surprise_pct": -53.37,
+                    "eps_estimated": 1.66,
+                    "eps_surprise_pct": -54.22,
                     "revenue_estimated_B": 7.98,
-                    "revenue_surprise_pct": -18.68
+                    "revenue_surprise_pct": -18.98
                 },
                 {
                     "date": "2026-05-08",
@@ -15785,19 +15785,19 @@
                 },
                 {
                     "date": "2025-11-07",
-                    "eps_reported": 1.38,
-                    "eps_estimated": 1.4,
-                    "eps_surprise_pct": -1.43,
-                    "revenue_estimated_B": 14.49,
-                    "revenue_surprise_pct": -0.5
+                    "eps_reported": 1.75,
+                    "eps_estimated": 1.96,
+                    "eps_surprise_pct": -10.71,
+                    "revenue_estimated_B": 18.38,
+                    "revenue_surprise_pct": -3.75
                 },
                 {
                     "date": "2025-08-08",
-                    "eps_reported": 0.71,
-                    "eps_estimated": 1.05,
-                    "eps_surprise_pct": -32.38,
-                    "revenue_estimated_B": 7.46,
-                    "revenue_surprise_pct": -11.33
+                    "eps_reported": 0.81,
+                    "eps_estimated": 0.9,
+                    "eps_surprise_pct": -10.0,
+                    "revenue_estimated_B": 8.51,
+                    "revenue_surprise_pct": -3.5
                 },
                 {
                     "date": "2025-05-08",
@@ -15826,7 +15826,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 60.11,
+            "rsi": 59.69,
             "ema7": 157.2,
             "ema14": 152.32,
             "ema21": 149.76,
@@ -15862,15 +15862,15 @@
         },
         "fundamentals": {
             "beta": 1.38,
-            "pe_vs_hist_pct": -24.46,
-            "pe_hist_avg_3y": 36.24,
-            "pe_vs_sector_pct": 11.21,
-            "sector_pe_avg": 24.62,
+            "pe_vs_hist_pct": -25.85,
+            "pe_hist_avg_3y": 36.93,
+            "pe_vs_sector_pct": 10.85,
+            "sector_pe_avg": 24.7,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -24.45,
+            "forward_pe_vs_hist_pct": -25.86,
             "book_price_dev": 18.15
         },
-        "last_updated": "2026-10-14 12:37:52"
+        "last_updated": "2026-10-14 13:18:44"
     },
     {
         "ticker": "VZ",
@@ -15969,7 +15969,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 36.19,
+            "rsi": 36.51,
             "ema7": 43.93,
             "ema14": 44.83,
             "ema21": 45.47,
@@ -16013,7 +16013,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:54"
+        "last_updated": "2026-10-14 13:18:46"
     },
     {
         "ticker": "WDC",
@@ -16112,7 +16112,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 33.33,
+            "rsi": 32.96,
             "ema7": 400.67,
             "ema14": 416.35,
             "ema21": 425.91,
@@ -16151,12 +16151,12 @@
             "pe_vs_hist_pct": -50.43,
             "pe_hist_avg_3y": 28.53,
             "pe_vs_sector_pct": -91.64,
-            "sector_pe_avg": 169.21,
+            "sector_pe_avg": 169.13,
             "extended_eligible": false,
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:37:56"
+        "last_updated": "2026-10-14 13:18:49"
     },
     {
         "ticker": "WFC",
@@ -16172,10 +16172,10 @@
             "revenue_source": "Net interest income y servicios financieros."
         },
         "fundamental": {
-            "pe_ratio": 11.39,
-            "forward_pe": 10.06,
-            "eps": 7.09,
-            "forward_eps": 8.02,
+            "pe_ratio": 11.74,
+            "forward_pe": 10.05,
+            "eps": 6.88,
+            "forward_eps": 8.03,
             "debt_to_equity": "N/A",
             "moat": "Escala de depósitos, marca y amplia base de clientes.",
             "risks": "Regulación, crédito y necesidad de mejorar eficiencia operativa.",
@@ -16246,16 +16246,16 @@
                 },
                 {
                     "date": "2025-01-15",
-                    "eps_reported": 1.43,
-                    "eps_estimated": 1.36,
-                    "eps_surprise_pct": 5.15,
-                    "revenue_estimated_B": 15.01,
-                    "revenue_surprise_pct": 1.8
+                    "eps_reported": 1.48,
+                    "eps_estimated": 1.35,
+                    "eps_surprise_pct": 9.63,
+                    "revenue_estimated_B": 15.54,
+                    "revenue_surprise_pct": 3.37
                 }
             ]
         },
         "technical_daily": {
-            "rsi": 37.49,
+            "rsi": 37.07,
             "ema7": 81.86,
             "ema14": 82.26,
             "ema21": 82.9,
@@ -16291,15 +16291,15 @@
         },
         "fundamentals": {
             "beta": 0.95,
-            "pe_vs_hist_pct": -7.37,
-            "pe_hist_avg_3y": 12.29,
-            "pe_vs_sector_pct": -43.19,
-            "sector_pe_avg": 20.05,
+            "pe_vs_hist_pct": -1.6,
+            "pe_hist_avg_3y": 11.93,
+            "pe_vs_sector_pct": -41.53,
+            "sector_pe_avg": 20.08,
             "extended_eligible": true,
-            "forward_pe_vs_hist_pct": -7.34,
-            "book_price_dev": 1.52
+            "forward_pe_vs_hist_pct": -1.63,
+            "book_price_dev": 1.48
         },
-        "last_updated": "2026-10-14 12:37:58"
+        "last_updated": "2026-10-14 13:18:51"
     },
     {
         "ticker": "WMT",
@@ -16398,7 +16398,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 63.35,
+            "rsi": 64.39,
             "ema7": 110.3,
             "ema14": 108.98,
             "ema21": 108.52,
@@ -16442,7 +16442,7 @@
             "forward_pe_vs_hist_pct": "N/A",
             "book_price_dev": "N/A"
         },
-        "last_updated": "2026-10-14 12:38:00"
+        "last_updated": "2026-10-14 13:18:53"
     },
     {
         "ticker": "XOM",
@@ -16541,7 +16541,7 @@
             ]
         },
         "technical_daily": {
-            "rsi": 72.96,
+            "rsi": 72.79,
             "ema7": 169.09,
             "ema14": 166.66,
             "ema21": 165.36,
@@ -16585,6 +16585,6 @@
             "forward_pe_vs_hist_pct": 51.17,
             "book_price_dev": 2.76
         },
-        "last_updated": "2026-10-14 12:38:02"
+        "last_updated": "2026-10-14 13:18:55"
     }
 ]

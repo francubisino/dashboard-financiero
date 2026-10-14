@@ -59,9 +59,9 @@
         {
             "ticker": "MU",
             "name": "Micron Technology, Inc.",
-            "quantity": 23,
+            "quantity": 27,
             "price": 305374.97,
-            "total": 7023624.31
+            "total": 8245124.19
         },
         {
             "ticker": "NVDA",
@@ -99,5 +99,5 @@
             "total": 2190080.0
         }
     ],
-    "last_updated": "2026-10-14 12:38:06"
+    "last_updated": "2026-10-14 13:19:01"
 }
