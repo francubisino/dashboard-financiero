@@ -1,6 +1,6 @@
 {
   "anio": 2026,
-  "generado": "2026-10-15T13:53:46",
+  "generado": "2026-10-15T16:42:48",
   "formato_plano": [
     "CEDEAR_QQQ;2026-01;-0.8898",
     "CEDEAR_QQQ;2026-02;-5.4297",
@@ -11,7 +11,7 @@
     "CEDEAR_QQQ;2026-07;-5.5917",
     "CEDEAR_QQQ;2026-08;5.3719",
     "CEDEAR_QQQ;2026-09;4.2266",
-    "CEDEAR_QQQ;2026-10;-2.4666",
+    "CEDEAR_QQQ;2026-10;-2.0903",
     "CEDEAR_SPY;2026-01;-0.4306",
     "CEDEAR_SPY;2026-02;-3.7001",
     "CEDEAR_SPY;2026-03;-4.2715",
@@ -21,7 +21,7 @@
     "CEDEAR_SPY;2026-07;0.8713",
     "CEDEAR_SPY;2026-08;3.9634",
     "CEDEAR_SPY;2026-09;0.5865",
-    "CEDEAR_SPY;2026-10;0.6317",
+    "CEDEAR_SPY;2026-10;1.0204",
     "CER;2026-01;2.6547",
     "CER;2026-02;2.6993",
     "CER;2026-03;3.0526",
@@ -113,7 +113,7 @@
     {
       "indicador": "CEDEAR_QQQ",
       "mes": "2026-10",
-      "valor": -2.4666
+      "valor": -2.0903
     },
     {
       "indicador": "CEDEAR_SPY",
@@ -163,7 +163,7 @@
     {
       "indicador": "CEDEAR_SPY",
       "mes": "2026-10",
-      "valor": 0.6317
+      "valor": 1.0204
     },
     {
       "indicador": "CER",
