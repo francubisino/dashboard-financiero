@@ -52,14 +52,14 @@
         {
             "ticker": "MU",
             "name": "Micron Technology, Inc.",
-            "quantity": 31,
+            "quantity": 15,
             "price": 300725.0,
             "total": 9322475.0
         },
         {
             "ticker": "NVDA",
             "name": "NVIDIA Corporation",
-            "quantity": 708,
+            "quantity": 546,
             "price": 14660.0,
             "total": 10379280.0
         },
