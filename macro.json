@@ -1,22 +1,22 @@
 {
     "DXY": {
-        "value": 101.635,
+        "value": 101.693,
         "prev": 100.22
     },
     "VIX": {
-        "value": 16.1,
+        "value": 16.11,
         "prev": 15.44
     },
     "COPPER": {
-        "value": 6.63,
+        "value": 6.6465,
         "prev": 6.5865
     },
     "GOLD": {
-        "value": 4198.6001,
+        "value": 4195.2002,
         "prev": 4399.7002
     },
     "COPPER_GOLD": {
-        "value": 0.001579,
+        "value": 0.001584,
         "prev": 0.001497
     },
     "HY_SPREAD": {
@@ -36,7 +36,7 @@
         "prev": 0.126
     },
     "MOVE_VIX": {
-        "value": 6.366,
+        "value": 6.362,
         "prev": 5.422
     },
     "GLOBAL_PMI": {
@@ -51,5 +51,5 @@
         "value": null,
         "prev": null
     },
-    "last_updated": "2026-10-16 11:00:58"
+    "last_updated": "2026-10-16 12:04:24"
 }
